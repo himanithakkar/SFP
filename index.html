@@ -3,6 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<link href="img/SFP-FV-ICON.png" rel="icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="css/index.css">
@@ -10,8 +11,7 @@
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	</head>
 	<body>
-		<!-- START OF HOME PAGE -->
-		
+		<!-- START OF HOME PAGE -->	
 		<div data-role="page" id="home">
 			<div data-role="header">
 				<h1>SFP PERFUMES</h1>
@@ -19,58 +19,59 @@
 			<ul data-role="listview" data-inset="true" class="ui-alt-icon">
 				<li><a href="#deodorant">DEODORANT</a></li>
 				<li><a href="#home-fragrance">HOME FRAGRANCE</a></li>
-				<li><a href="#">PERFUME</a></li>
+				<li><a href="#perfume">PERFUME</a></li>
 				<li><a href="#">SILENT VALLY</a></li>
 				<li><a href="#">GALLERY</a></li>
 			</ul>
 		</div>
 		<!-- END OF HOME PAGE -->
-		<!-- START OF DEODORANT'S PAGE -->
+		<!-- START OF DEODORANT'S LIST PAGE -->
 		<div data-role="page" id="deodorant">
 			<div data-role="header" data-add-back-btn="true" data-rel="back">
 				<h1>DEODORANT</h1>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li role="list-divider">REVO</li>
-				<li><a href="#blue">
-					<img src="img/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
+				<li><a href="#deo1">
+					<img src="img/deodorant/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
 					<h2>Revo Deodorant spray Blue (100ml)</h2>
 					<p>Rs.160</p></a>
 				</li>
-				<li><a href="#">
-					<img src="img/Revo-Deodorant-spray-Violet-500x500.min-400x400.png">
+				<li><a href="#deo2">
+					<img src="img/deodorant/Revo-Deodorant-spray-Violet-500x500.min-400x400.png">
 					<h2>Revo Deodorant spray Violent(100ml)</h2>
 					<p>Rs.160</p></a>
 				</li>
 				<li role="list-divider">TARA</li>
-				<li><a href="#">
-					<img src="img/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
+				<li><a href="#deo3">
+					<img src="img/deodorant/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
 					<h2>Tara Vetiver Delight Body Deo (100ml)</h2>
 					<p>Rs.145</p></a>
 				</li>
-				<li><a href="#">
-					<img src="img/Tara-Blue-500x500-400x400.png">
+				<li><a href="#deo4">
+					<img src="img/deodorant/Tara-Blue-500x500-400x400.png">
 					<h2>Tara Blue Body Deo (100ml)</h2>
 					<p>Rs.145</p></a>
 				</li>
-				<li><a href="#">
-					<img src="img/Tara-Mile-Stone-500x500-500x500.min-400x400.png">
+				<li><a href="#deo5">
+					<img src="img/deodorant/Tara-Mile-Stone-500x500-500x500.min-400x400.png">
 					<h2>Tara Milestone Body Deo (100ml)</h2>
 					<p>Rs.145</p></a>
 				</li>
-				<li><a href="#">
-					<img src="img/Tara-Insta-Cool-Body-Deo-500x500-500x500.min-400x400.png">
+				<li><a href="#deo6">
+					<img src="img/deodorant/Tara-Insta-Cool-Body-Deo-500x500-500x500.min-400x400.png">
 					<h2>Tara Insta Cool Body Deo (100ml)</h2>
 					<p>Rs.145</p></a>
 				</li>
 			</ul>
-		</div><!-- END OF DEODORANT'S PAGE -->
-		<div data-role="page" id="blue">
+		</div><!-- END OF DEODORANT'S LIST PAGE -->
+		<!-- START OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
+		<div data-role="page" id="deo1">
 			<div data-role="header" data-add-back-btn="true" data-rel="back">
-				<h1>Blue(100ml)</h1>
+				<h1>Revo Deodorant spray Blue (100ml)</h1>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
+                <img src="img/deodorant/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -85,40 +86,543 @@
 					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
 	            </div>
 	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code</h3>
+	            	<h3>Product code : </h3>
 	            </div>
             </div>
         </div>
-		<!-- START OF HOME FRAGRANCE'S PAGE -->
+        <div data-role="page" id="deo2">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Revo Deodorant spray Violet (100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Revo-Deodorant-spray-Violet-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.160.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Your search ends here for a powerful strong antibacterial deodorant.   REVO Deodorant Spray Violet  is a water based spray and contains no aerosol, guaranteeing ample application with every spray. This deodorant Spray contains Farnesol which is found in Palmarosa and Chamomille oils. Farnesol is an anti-bacterial agent that destroys odour-causing microbes</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="deo3">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Tara Vetiver Delight Body Deo (100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Tara Vetiver Delight Body Deo spray is an aromatic fragrance for men that bring a touch of excitement to everything you do. Lavender, Rosemary and spices mixed with Patchouli to create a distinctive scent.  Buy Tara Vetiver Delight Body Deo online for a casual occasions.  Apply it to your pulse points before you leave the house, and enjoy the attention this masculine fragrance brings throughout the day.
+
+					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="deo4">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Tara Blue Body Deo (100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Tara-Blue-500x500-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Tara Blue Body deo with the invigorating scent of lemon and mandarin intermingled with geranium, rose and lily resting on a base of sandal, patchouli and soft musk with tempting vanilla  accord is designed to keep your freshness intact all through the day.  Buy Tara Blue body deodorant online to feel fresh all day long.
+
+					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="deo5">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Tara Milestone Body Deo (100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Tara-Mile-Stone-500x500-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Tara Milestone Body Deo  is an electrifying scent combining light floral tones with musky hints, designed to get you the attention you deserve.  Buy this Deodorant online for a smooth and mellow fragrance and step out with confidence.
+
+					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="deo6">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Tara Insta Cool Body Deo (100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Tara-Insta-Cool-Body-Deo-500x500-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Tara Insta Cool Body Deo online for an instant cooling effect thanks to a blend of enriching aquatic notes that keep you cool and vibrant all through the day. The fragrance of fresh woody tones is enticingly different.
+
+					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <!--END OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
+		<!-- START OF HOME FRAGRANCE'S LIST PAGE -->
 		<div data-role="page" id="home-fragrance">
 			<div data-role="header" data-add-back-btn="true" data-rel="back">
 				<h1>HOME FRAGRANCE</h1>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li role="list-divider">AIR FRESHNER</li>
-				<li><a href="#">
-					<img src="IMG/Tara Air Freshner Green Rose infusion-400x400.png">
-					<h2>Tara Green Air Freshner - Rose Infusion (250ml)</h2>
+				<li><a href="#air-freshner1">
+					<img src="img/air_freshners/Tara Air Freshner Green Rose infusion-400x400.png">
+					<h2>Tara Green Air Freshner - Rose Infusion(250ml)</h2>
 					<p>Rs.145</p></a>
 				</li>
-				<li><a href="#">
-					<img src="img/Tara Air Freshner Green Lavender-400x400.png">
-					<h2>Tara Green Air Freshner - Lavender (250ml)</h2>
+				<li><a href="#air-freshner2">
+					<img src="img/air_freshners/Tara Air Freshner Green Lavender-400x400.png">
+					<h2>Tara Green Air Freshner - Lavender(250ml)</h2>
 					<p>Rs.145</p></a>
 				</li>
-				<li><a href="#">
-					<img src="img/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
-					<h2>Tara Green Air Freshner - Sandal wood (250ml)</h2>
+				<li><a href="#air-freshner3">
+					<img src="img/air_freshners/Tara Air Freshner Green Sandalwood-400x400.png">
+					<h2>Tara Green Air Freshner - Sandal wood(250ml)</h2>
 					<p>Rs.145</p></a>
 				</li>
-				<li><a href="#">
-					<img src="img/Tara Air Freshner Green Sandalwood-400x400.png">
-					<h2>Tara Green Air Freshner - Jasmine (250ml)</h2>
+				<li><a href="#air-freshner4">
+					<img src="img/air_freshners/Tara Air Freshner Green Jasmine-400x400.png">
+					<h2>Tara Green Air Freshner - Jasmine(250ml)</h2>
 					<p>Rs.145</p></a>
 				</li>
 			</ul>
 		</div>
-		<!-- END OF HOME FRAGRANCE'S PAGE -->
-		
+		<!-- END OF HOME FRAGRANCE'S LIST PAGE -->
+		<!-- START OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
+		<div data-role="page" id="air-freshner1">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Tara Green Air Freshner - Rose Infusion(250ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/air_freshners/Tara Air Freshner Green Rose infusion-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Presenting Tara green air freshener rose infusion online to experience the essence of rose extracts to make your ambience smell wonderfully fragrant.
+					Fragrance of rose is traditionally used to calm and uplift ones mood and can be attributed to its properties as an antidepressant.
+					Roses are widely considered as the most beautiful flowers in the world.  Its incomparable fragrance can invoke romantic feelings even in the hardest of hearts.
+					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="air-freshner2">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Tara Green Air Freshner - Lavender(250ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/air_freshners/Tara Air Freshner Green Lavender-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Tara Green Air Freshner Lavender online and spray it on your bed spreads, sofas and screens to fill the atmosphere for yourself and for your guest with a distinctive aroma of refreshing fragrance.  Lavender is used to treat anxiety, headaches, depression and improves the state of mind and body by inducing calming effect.
+					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="air-freshner3">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Tara Green Air Freshner - Sandal wood(250ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/air_freshners/Tara Air Freshner Green Sandalwood-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Get the all new Tara green air freshner Sandal wood online to make your  living ambience divinely fragrantNatural sandalwood fragrance not only freshens the surrounding but also soothes and relaxes the mind.
+					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="air-freshner4">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Tara Green Air Freshner - Jasmine(250ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/air_freshners/Tara Air Freshner Green Jasmine-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Tara green air freshner Jasmine online for those wonderful moments, be it a celebration or festivity, this floral scent can be piercingly sweet and carry the scent miles off to be cherished and recollected
+					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
+		<!-- START OF PERFUME'S LIST PAGE -->
+		<div data-role="page" id="perfume">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>PERFUME</h1>
+			</div>
+			<ul data-role="listview" data-inset="true" data-divider-theme="a">
+				<li role="list-divider">CRAZY MOMENTS</li>
+				<li><a href="#perfume1">
+					<img src="img/perfume/Crazy-Moments-Hizz-500x500.min-400x400.png">
+					<h2>Crazy Moments Hizz(50ml)</h2>
+					<p>Rs.250</p></a>
+				</li>
+				<li><a href="#perfume2">
+					<img src="img/perfume/Perfume - Crazy moments-400x400.png">
+					<h2>Crazy Moments Red(100ml)</h2>
+					<p>Rs.450</p></a>
+				</li>
+				<li><a href="#perfume3">
+					<img src="img/perfume/Perfume - Crazy moments Black-400x400.png">
+					<h2>Crazy Moments Black(100ml)</h2>
+					<p>Rs.450</p></a>
+				</li>
+				<li role="list-divider">AHSAN</li>
+				<li><a href="#perfume4">
+					<img src="img/perfume/Perfume - Sprit-400x400.png">
+					<h2>Ahsan Sprit(60ml)</h2>
+					<p>Rs.200</p></a>
+				</li>
+				<li><a href="#perfume5">
+					<img src="img/perfume/Perfume - Freedom-400x400.png">
+					<h2>Ahsan Freedom(60ml)</h2>
+					<p>Rs.200</p></a>
+				</li>
+				<li><a href="#perfume6">
+					<img src="img/perfume/Ahsan-Attarful-500x500-400x400.png">
+					<h2>Ahsan Attarful(30ml)</h2>
+					<p>Rs.125</p></a>
+				</li>
+				<li><a href="#perfume7">
+					<img src="img/perfume/Gold - 30ml-400x400.png">
+					<h2>Ahsan Golden Magnet(30ml)</h2>
+					<p>Rs.125</p></a>
+				</li>
+				<li role="list-divider">JASS</li>
+				<li><a href="#perfume8">
+					<img src="img/perfume/0123-400x400.png">
+					<h2>JASS Perfume Spray(8ml)</h2>
+					<p>Rs.100</p></a>
+				</li>
+				<li><a href="#perfume9">
+					<img src="img/perfume/04-400x400.png">
+					<h2>JASS Perfume Spray(8ml) - Pack of Two</h2>
+					<p>Rs.160</p></a>
+				</li>
+				<li><a href="#perfume10">
+					<img src="img/perfume/JASS 8ml png-400x400.png">
+					<h2>JASS Perfume Spray(60ml)</h2>
+					<p>Rs.250</p></a>
+				</li>
+			</ul>
+		</div>
+		<!-- END OF PERFUME'S LIST PAGE -->
+		<!-- START OF PRODUCT DETAIL PAGES OF PERFUME CATEGORY -->
+		<div data-role="page" id="perfume1">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Crazy Moments Hizz(50ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/Crazy-Moments-Hizz-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.250.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Get Crazy Moments Hizz perfume online – A modern and timeless creativity bottled in a trendy pack.  A long lasting woody, musky, ambery fragrance created with a unique blend of exotic fresh Armoise, Lavender, Juniperberry top notes, growing into a spicy-floral heart made of clove, jasmine, Ylang resting on sandalwood, patchouli and vetiver base to last long.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume2">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Crazy Moments Red(100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/Perfume - Crazy moments-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.450.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Crazy moments RED perfume online for women - a Floral Woody Musk fragrance, which is an interpretation of love, eager to explore the world of fantasy.
+					Fresh and sparkling top notes leading to a sumptuous bouquet of rose and jasmine, harmoniously combined with the fruity, woody, powdery notes in the dry down, leaving an irresistible and energetic feeling with just a perfume spray.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume3">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Crazy Moments Black(100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/Perfume - Crazy moments Black-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.450.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Get Crazy moments Black perfume  online – for men.  A luxurious and sensual perfume spray, with rich dark trace of remarkable spices, that takes you on a voyage to far beyond.
+					An opulent, classically dark chypre with a blast of black truffle, ylang-ylang, black currant and effervescent citrus notes, in the floral-spicy heart, dwells the richness of Jasmine, lotus and fruity character and the base combines woody notes which transform you to a realm of tranquility.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume4">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Ahsan Sprit(60ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/Perfume - Sprit-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.200.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Ahsan Sprit online for its deep, comforting, and warm base of tobacco with smoky heart featuring lavender and Sage.  The unostentatious accord of Bergamot and lemon add the zest to this signature fragrance.  Buy best perfume online for a dash of glamour and uninhibited sophistication.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume5">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Ahsan Freedom(60ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/Perfume - Freedom-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.200.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Ahsan Freedom Perfume online for its strength, sensuality, masculinity, individuality - all characteristics that modern man enjoys. This Branded Perfume online  holds these characteristics at its heart too. Strong notes of leather and coriander, a sensual blend of sandalwood & musk and unusual notes of Artemisia and tobacco leaves all combine to produce this unmistakable masculine fragrance.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume6">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Ahsan Attarful(30ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/Ahsan-Attarful-500x500-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.125.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Ahsan Attar full is a beautiful, fresh and clean fragrance with a calming yet uplifting note. Buy Ahsan Attar full online for a reminiscence of lush gardens bathed in warm summer sunlight.  This fragrance will transport the wearer to a cool haven and offer clarity and spiritual calm.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume7">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>Ahsan Golden Magnet(30ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/Gold - 30ml-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.125.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Ahsan golden magnet has a fresh green aldehydic note enriched with floral notes of jasmine, rose and violet reinforced with a base of precious woods of patchouli and soft musk.  Buy this perfume online for an invigorating blend of flowery, spicy and musky aroma.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume8">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>JASS Perfume Spray(8ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/0123-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.100.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>A natural scent with floral notes with a strong fragrance. 
+					Caught in the daily rush, one can forget to cherish what’s truly important – relationships with loved ones. What they need, is a little something to rekindle the passion. Yes, JASS "Rishtey Ka Recharge" with the delightful fragrance that reignites and restores the warmth to makes life romantic.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume9">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>JASS Perfume Spray(8ml) - Pack of Two</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/04-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.160.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>A natural scent with floral notes with a strong fragrance. 
+					Caught in the daily rush, one can forget to cherish what’s truly important – relationships with loved ones. What they need, is a little something to rekindle the passion. Yes, JASS "Rishtey Ka Recharge" with the delightful fragrance that reignites and restores the warmth to makes life romantic.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <div data-role="page" id="perfume10">
+			<div data-role="header" data-add-back-btn="true" data-rel="back">
+				<h1>JASS Perfume Spray(60ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/JASS 8ml png-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.250.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>A natural scent with floral notes with a strong fragrance. 
+					Caught in the daily rush, one can forget to cherish what’s truly important – relationships with loved ones. What they need, is a little something to rekindle the passion. Yes, JASS "Rishtey Ka Recharge" with the delightful fragrance that reignites and restores the warmth to makes life romantic.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : </h3>
+	            </div>
+            </div>
+        </div>
+        <!-- END OF PRODUCT DETAIL PAGES OF PERFUME CATEGORY -->
 	</body>
 </html>
