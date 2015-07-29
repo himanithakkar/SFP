@@ -3,19 +3,26 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:700,600,500,400,300"/>
-		<link href="img/SFP-FV-ICON.png" rel="icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
 		<link rel="stylesheet" href="css/index.css"/>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<style>
+			#home .ui-header {
+    		background: #ffffff;
+    		border-bottom:10px solid #3a2d1d;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- START OF HOME PAGE -->	
 		<div data-role="page" id="home">
-			<div data-role="header">
-				<h1>SFP PERFUMES</h1>
+
+			<div data-role="header" align="center">
+      			<img border="0" src="img/Logo-3.png" alt="Logo, Facebook" height="40px" vspace="2"/>
 			</div>
 			<ul data-role="listview" data-inset="true" class="ui-alt-icon">
 				<li><a href="#deodorant" data-transition="slide">DEODORANT</a></li>
@@ -23,7 +30,7 @@
 				<li><a href="#perfume" data-transition="slide">PERFUME</a></li>
 				<li><a href="#attar" data-transition="slide">ATTAR</a></li>
 				<li><a href="#slient-valley" data-transition="slide">SILENT VALLEY</a></li>
-				<li><a href="#" data-transition="slide">GALLERY</a></li>
+			<!--	<li class="gallery"><a href="#gallery" data-transition="slide">GALLERY</a></li> -->
 			</ul>
 		</div>
 		<!-- END OF HOME PAGE -->
@@ -1766,6 +1773,5 @@
             </div>
         </div>
         <!--- END AROMATHERAPY PRODUCTS DETAIL PAGES-->
-        <!--- END OF SLIENT VALLEY PRODUCTS PAGES-->
 	</body>
 </html>
