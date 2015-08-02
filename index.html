@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
 		<link rel="stylesheet" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:700,600,500,400,300"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script src="js/map.js"></script>
@@ -38,8 +39,9 @@
 		<!-- END OF HOME PAGE -->
 		<!-- START OF DEODORANT'S LIST PAGE -->
 		<div data-role="page" id="deodorant">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header">
 				<h1>DEODORANT</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li role="list-divider">REVO</li>
@@ -78,9 +80,9 @@
 		</div><!-- END OF DEODORANT'S LIST PAGE -->
 		<!-- START OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
 		<div data-role="page" id="deo1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back"  >
+			<div data-role="header" >
+			<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 				<h1>Revo Deodorant spray Blue (100ml)</h1>
-				<a href="#deo2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/deodorant/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
@@ -100,11 +102,15 @@
 	            	<h3>Product code : PC0001 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+            	<a href="#deo2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
+
         <div data-role="page" id="deo2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header">
+			<a href="#home" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 				<h1>Revo Deodorant spray Violet (100ml)</h1>
-				<a href="#deo3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/deodorant/Revo-Deodorant-spray-Violet-500x500.min-400x400.png">
@@ -123,11 +129,15 @@
 	            	<h3>Product code : PC0002</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+            	<a href="#deo1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+            	<a href="#deo3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="deo3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Tara Vetiver Delight Body Deo (100ml)</h1>
-				<a href="#deo4" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/deodorant/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
@@ -147,11 +157,15 @@
 	            	<h3>Product code :PC0003 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            	<a href="#deo2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            	<a href="#deo4" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="deo4">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Tara Blue Body Deo (100ml)</h1>
-				<a href="#deo5" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/deodorant/Tara-Blue-500x500-400x400.png">
@@ -171,11 +185,15 @@
 	            	<h3>Product code :PC0004 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            	<a href="#deo3" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            	<a href="#deo5" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="deo5">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Tara Milestone Body Deo (100ml)</h1>
-				<a href="#deo6" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/deodorant/Tara-Mile-Stone-500x500-500x500.min-400x400.png">
@@ -195,10 +213,15 @@
 	            	<h3>Product code :PC0005</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            	<a href="#deo4" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            	<a href="#deo6" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="deo6">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header">
 				<h1>Tara Insta Cool Body Deo (100ml)</h1>
+				<a href="#home" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/deodorant/Tara-Insta-Cool-Body-Deo-500x500-500x500.min-400x400.png">
@@ -218,12 +241,16 @@
 	            	<h3>Product code :PC0006</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            	<a href="#deo4" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+			</div>
         </div>
         <!--END OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
 		<!-- START OF HOME FRAGRANCE'S LIST PAGE -->
 		<div data-role="page" id="home-fragrance">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>HOME FRAGRANCE</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li role="list-divider">AIR FRESHNER</li>
@@ -252,9 +279,9 @@
 		<!-- END OF HOME FRAGRANCE'S LIST PAGE -->
 		<!-- START OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
 		<div data-role="page" id="air-freshner1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
-				<h1>Tara Green Air Freshner - Rose Infusion(250ml)</h1>
-				<a href="#air-freshner2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+			<div data-role="header" >
+				<h1>Tara Green Air Freshner - Rose Infusion(250ml)</h1>				
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/air_freshners/Tara Air Freshner Green Rose infusion-400x400.png">
@@ -276,11 +303,14 @@
 	            	<h3>Product code :PC0007</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#air-freshner2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="air-freshner2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Tara Green Air Freshner - Lavender(250ml)</h1>
-				<a href="#air-freshner3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/air_freshners/Tara Air Freshner Green Lavender-400x400.png">
@@ -300,11 +330,15 @@
 	            	<h3>Product code :PC0008</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            	<a href="#air-freshner1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            	<a href="#air-freshner3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="air-freshner3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Tara Green Air Freshner - Sandal wood(250ml)</h1>
-				<a href="#air-freshner4" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/air_freshners/Tara Air Freshner Green Sandalwood-400x400.png">
@@ -324,10 +358,15 @@
 	            	<h3>Product code :PC0009 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#air-freshner2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#air-freshner4" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="air-freshner4">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Tara Green Air Freshner - Jasmine(250ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/air_freshners/Tara Air Freshner Green Jasmine-400x400.png">
@@ -347,12 +386,16 @@
 	            	<h3>Product code :PC0010 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#air-freshner3" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+			</div>
         </div>
         <!-- END OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
 		<!-- START OF PERFUME'S LIST PAGE -->
 		<div data-role="page" id="perfume">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>PERFUME</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li role="list-divider">CRAZY MOMENTS</li>
@@ -493,9 +536,9 @@
 		<!-- END OF PERFUME'S LIST PAGE -->
 		<!-- START OF PRODUCT DETAIL PAGES OF PERFUME CATEGORY -->
 		<div data-role="page" id="perfume1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" />
 				<h1>Crazy Moments Hizz(50ml)</h1>
-				<a href="#perfume2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Crazy-Moments-Hizz-500x500.min-400x400.png">
@@ -514,11 +557,14 @@
 	            	<h3>Product code :PC0011</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Crazy Moments Red(100ml)</h1>
-				<a href="#perfume3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Crazy moments-400x400.png">
@@ -538,11 +584,15 @@
 	            	<h3>Product code :PC0012</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Crazy Moments Black(100ml)</h1>
-				<a href="#perfume4" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Crazy moments Black-400x400.png">
@@ -562,11 +612,15 @@
 	            	<h3>Product code :PC0013 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume4" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume4">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Sprit(60ml)</h1>
-				<a href="#perfume5" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Sprit-400x400.png">
@@ -585,11 +639,15 @@
 	            	<h3>Product code :PC0014 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume3" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume5" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume5">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Freedom(60ml)</h1>
-				<a href="#perfume6" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Freedom-400x400.png">
@@ -608,11 +666,15 @@
 	            	<h3>Product code :PC0015</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume4" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume6" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume6">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Attarful(30ml)</h1>
-				<a href="#perfume7" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Ahsan-Attarful-500x500-400x400.png">
@@ -631,11 +693,15 @@
 	            	<h3>Product code :PC0016</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume5" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume7" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume7">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Golden Magnet(30ml)</h1>
-				<a href="#perfume8" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Gold - 30ml-400x400.png">
@@ -654,11 +720,15 @@
 	            	<h3>Product code :PC0017</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume6" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume8" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume8">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>JASS Perfume Spray(8ml)</h1>
-				<a href="#perfume9" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/0123-400x400.png">
@@ -678,11 +748,15 @@
 	            	<h3>Product code :PC0018</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume7" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume9" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume9">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>JASS Perfume Spray(8ml) - Pack of Two</h1>
-				<a href="#perfume10" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/04-400x400.png">
@@ -702,11 +776,15 @@
 	            	<h3>Product code :PC0019</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume8" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume10" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume10">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>JASS Perfume Spray(60ml)</h1>
-				<a href="#perfume11" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/JASS 8ml png-400x400.png">
@@ -726,11 +804,15 @@
 	            	<h3>Product code :PC0020</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume9" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume11" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
          <div data-role="page" id="perfume11">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Ajooba (60ml)</h1>
-				<a href="#perfume12" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Ajooba-300x300.png">
@@ -749,11 +831,15 @@
 	            	<h3>Product code :PC0021 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume10" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume12" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume12">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Attarful (100ml)</h1>
-				<a href="#perfume13" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Attar 100ml-300x300.png">
@@ -773,11 +859,15 @@
 	            	<h3>Product code :PC0022 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume11" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume13" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume13">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Attraction (60ml)</h1>
-				<a href="#perfume14" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Attraction-300x300.png">
@@ -796,11 +886,15 @@
 	            	<h3>Product code :PC0023 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume12" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume14" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume14">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan pearl for women (50ml)</h1>
-				<a href="#perfume15" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Pearl for women-300x300.png">
@@ -819,11 +913,15 @@
 	            	<h3>Product code :PC0024 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume13" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume15" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume15">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Sandalwood (30ml)</h1>
-				<a href="#perfume16" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Ahsan-Sandalwood-500x500-500x500.min-300x300.png">
@@ -843,11 +941,15 @@
 	            	<h3>Product code :PC0025 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume14" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume16" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume16">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Touch a Chord	(50ml)</h1>
-				<a href="#perfume17" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Touch of chord-300x300.png">
@@ -866,12 +968,16 @@
 	            	<h3>Product code :PC0026 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume15" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume17" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
          </div>
         <div data-role="page" id="perfume17">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Frangipani (30ml)</h1>
-				<a href="#perfume18" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Ahsan-Frangipani-500x500-500x500.min-300x300.png">
@@ -899,11 +1005,15 @@
 	            	<h3>Product code :PC0027 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume16" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume18" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume18">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan White Flower (30ml)</h1>
-				<a href="#perfume19" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Ahsan-white-Flower-500x500-500x500.min-300x300.png">
@@ -927,11 +1037,15 @@
 	            	<h3>Product code :PC0028 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume17" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume19" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume19">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Rose (30ml)</h1>
-				<a href="#perfume20" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Ahsan Rose-500x500-500x500.min-300x300.png">
@@ -954,11 +1068,15 @@
 	            	<h3>Product code :PC0029 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume18" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume20" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume20">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Golden Magnet (100ml)</h1>
-				<a href="#perfume21" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Gold - 100ml-300x300.png">
@@ -977,11 +1095,15 @@
 	            	<h3>Product code :PC0030 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume19" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume21" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume21">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Black Magnet (100ml)</h1>
-				<a href="#perfume22" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Black-Magnet-300x300.png">
@@ -1000,11 +1122,15 @@
 	            	<h3>Product code :PC0031 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume20" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume22" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume22">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Black Magnet (30ml)</h1>
-				<a href="#perfume23" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Black-Magnet (2)-300x300.png">
@@ -1023,11 +1149,15 @@
 	            	<h3>Product code :PC0032 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume21" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume23" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume23">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan The Best Black (100ml)</h1>
-				<a href="#perfume24" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Ahsan-The-Best-Black-500x500-500x500.min-300x300.png">
@@ -1046,11 +1176,15 @@
 	            	<h3>Product code :PC0033 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume22" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume24" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume24">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan New Woman (60ml)</h1>
-				<a href="#perfume25" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - New women-300x300.png">
@@ -1069,11 +1203,15 @@
 	            	<h3>Product code :PC0034 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume23" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume25" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume25">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan New Man (60ml)</h1>
-				<a href="#perfume26" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - man-300x300.png">
@@ -1092,10 +1230,15 @@
 	            	<h3>Product code :PC0035 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#perfume24" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#perfume26" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="perfume26">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Ahsan Marwah (100ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/perfume/Ahsan-Marwah-500x500.min-300x300.png">
@@ -1114,12 +1257,16 @@
 	            	<h3>Product code :PC0036 </h3>
 	            </div>
             </div>
+             <div data-role="footer" data-position="fixed">
+	            <a href="#perfume25" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+			</div>
         </div>
         <!-- END OF PRODUCT DETAIL PAGES OF PERFUME CATEGORY -->
         <!-- START OF ATTAR'S LIST PAGE -->
         <div data-role="page" id="attar">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>ATTAR</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
        		 <ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li><a href="#attar1" data-transition="slide">
@@ -1151,9 +1298,9 @@
 		<!-- END OF ATTAR'S LIST PAGE -->
 		<!-- START OF PRODUCT DETAIL PAGES OF ATTAR CATEGORY -->
 		<div data-role="page" id="attar1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Attar Jazba(20ml)</h1>
-				<a href="#attar2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/attar/Attar - Jazba-400x400.png">
@@ -1173,11 +1320,14 @@
 	            	<h3>Product code :PC0037</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#attar2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="attar2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Attar Musk(20ml)</h1>
-				<a href="#attar3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/attar/Attar - musk-400x400.png">
@@ -1197,11 +1347,15 @@
 	            	<h3>Product code :PC0038 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#attar1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#attar3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="attar3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Attar Savera(20ml)</h1>
-				<a href="#attar4" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/attar/Attar - Savera-400x400.png">
@@ -1221,11 +1375,15 @@
 	            	<h3>Product code :PC0039 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#attar2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#attar4" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="attar4">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Attar Sitara(20ml)</h1>
-				<a href="#attar5" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/attar/Attar - Sitara-400x400.png">
@@ -1245,10 +1403,15 @@
 	            	<h3>Product code :PC0040 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#attar3" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#attar5" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="attar5">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Attar Sunheri(20ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/attar/Attar - Sunheri-400x400.png">
@@ -1267,13 +1430,17 @@
 	            	<h3>Product code :PC0041 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#attar4" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+			</div>
         </div>
 
         <!-- END OF PRODUCT DETAIL PAGES OF ATTAR CATEGORY -->
         <!-- START OF SILENT VALLEY'S LIST PAGE -->
         <div data-role="page" id="slient-valley">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>SILENT VALLEY</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
        		 <ul data-role="listview" data-inset="true" class="ui-alt-icon">
 				<li><a href="#face-care" data-transition="slide">Face Care</a></li>
@@ -1288,8 +1455,9 @@
 		<!-- START OF PRODUCT DETAIL PAGES OF SILENT VALLEY CATEGORY -->
 		<!--- FACE CARE PRODUCTS -->
 		<div data-role="page" id="face-care">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>FACE CARE</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li role="list-divider">CLEANSING LOTION</li>
@@ -1333,8 +1501,9 @@
 		</div>
 		<!-- CLEANSION LOTION PRODUCT DETAIL PAGE -->
 		<div data-role="page" id="cleansing-lotion">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Silent Valley Cleansing Lotion(100ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Clensing Lotion-300x300.png">
@@ -1358,13 +1527,16 @@
 	            	<h3>Product code :PC0042 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#facewash1" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <!--END OF CLEANSION LOTION PRODUCT DETAIL PAGE -->
         <!-- FACE WASH PRODUCT DETAIL PAGES -->
         <div data-role="page" id="facewash1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Face wash gel - Oily skin - Lemon(100ml)</h1>
-				<a href="#facewash2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Face Wash Gel - Lemon-300x300.png">
@@ -1387,11 +1559,15 @@
 	            	<h3>Product code :PC0043</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+            	<a href="#cleansing-lotion" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#facewash2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
          <div data-role="page" id="facewash2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Face Wash Gel - Sensitive Skin -Neem(100ml)</h1>
-				<a href="#facewash3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Face Wash Gel - Neem Tulsi-300x300.png">
@@ -1414,11 +1590,15 @@
 	            	<h3>Product code :PC0044</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#facewash1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#facewash3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="facewash3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Face Wash Cream - Normal to Dry skin - Turmeric(100ml)</h1>
-				<a href="#facescrub1" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Fash wash Cream - Turmeric-400x400.png">
@@ -1442,13 +1622,17 @@
 	            	<h3>Product code :PC0045</h3>
 	            </div>
             </div>
+             <div data-role="footer" data-position="fixed">
+	            <a href="#facewash2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#facescrub1" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <!-- END OF FACE WASH PRODUCT DETAIL PAGES -->
         <!-- FACE SCRUB PRODUCT DETAIL PAGES -->
         <div data-role="page" id="facescrub1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Face Scrub - Sensitive Skin - Walnut(100ml)</h1>
-				<a href="#facescrub2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Fruit Scrub Green Apple-300x300.png">
@@ -1471,11 +1655,15 @@
 	            	<h3>Product code :PC0046</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#facewash2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#facescrub2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="facescrub2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Fruit Scrub - Oily skin - Pomegranate(100ml)</h1>
-				<a href="#facescrub3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Fruit Scrub Pomegranet-300x300.png">
@@ -1499,10 +1687,15 @@
 	            	<h3>Product code :PC0047</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#facescrub1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#facescrub3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="facescrub3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Face Scrub - Normal to Dry skin - Apricot(100ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Fruit Scrub Apricot walnut-300x300.png">
@@ -1526,13 +1719,18 @@
 	            	<h3>Product code :PC0048</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#facescrub2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+
+			</div>
         </div>
         <!-- END OF FACE SCRUB PRODUCT DETAIL PAGES -->
         <!-- END OF FACE CARE PRODUCTS -->
          <!-- FAIR SKIN PRODUCTS -->
          <div data-role="page" id="fair-skin">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>FAIRNESS CREAM</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="header" >
 				<h1>Fairness Effect Fairness Cream - Sandal Wood(50ml)</h1>
@@ -1563,8 +1761,9 @@
          <!-- END OF FAIR SKIN PRODUCTS -->
          <!--- SUN PROTECTION PRODUCTS LIST-->
 		<div data-role="page" id="sun-protection">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>SUN PROTECTION</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li role="list-divider">SUNSCREEN</li>
@@ -1588,9 +1787,9 @@
 		<!--- END OF SUN PROTECTION PRODUCTS LIST-->
 		<!--- START OF SUN PROTECTION PRODUCTS DETAIL PAGES-->
 		<div data-role="page" id="sunscreen1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Sun Protection Sun Screen Cream Aloevera - SPF 30(100ml)</h1>
-				<a href="#sunscreen2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Sun screeen cream 0229-300x300.png">
@@ -1614,11 +1813,14 @@
 	            	<h3>Product code :PC0050</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#sunscreen2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="sunscreen2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Sun Protection Sun Screen Cream Aloevera - SPF 40(100ml)</h1>
-				<a href="#sunscreen3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Sun screeen cream 0229-300x300.png">
@@ -1642,10 +1844,15 @@
 	            	<h3>Product code :PC0051</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#sunscreen1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#sunscreen3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="sunscreen3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Sun Protection Sun Screen Cream Aloevera - SPF 50(100ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Sun screeen cream 0229-300x300.png">
@@ -1669,12 +1876,16 @@
 	            	<h3>Product code :PC0052 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#sunscreen2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+			</div>
         </div>
         <!--- END OF SUN PROTECTION PRODUCTS DETAIL PAGES-->
         <!--- TREATMENT CARE PRODUCT LIST -->
 		<div data-role="page" id="treatment-care">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>TREATMENT CARE</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li><a href="#treatmentcare1" data-transition="slide">
@@ -1702,9 +1913,9 @@
 		 <!--- END OF TREATMENT CARE PRODUCTS LIST -->
 		 <!--- START TREATMENT CARE'S PRODUCTS DETAIL PAGES-->
         <div data-role="page" id="treatmentcare1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Anti Ageing Cream(50ml)</h1>
-				<a href="#treatmentcare2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Treatment Cream - Anti Ageing-300x300.png">
@@ -1727,11 +1938,14 @@
 	            	<h3>Product code :PC0053</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#treatmentcare2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="treatmentcare2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Undereye Gel(25ml)</h1>
-				<a href="#treatmentcare3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Treatment Cream - under eye-300x300.png">
@@ -1754,11 +1968,15 @@
 	            	<h3>Product code :PC0054</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#treatmentcare1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#treatmentcare3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="treatmentcare3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Night Cream(50ml)</h1>
-				<a href="#treatmentcare4" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Treatment Cream - Night Cream-300x300.png">
@@ -1786,10 +2004,15 @@
 	            	<h3>Product code :PC0055 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#treatmentcare2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#treatmentcare4" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="treatmentcare4">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Anti Blemish & Anti Pigmentation Cream(50ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Treatment Cream - Anti Blemish-300x300.png">
@@ -1818,12 +2041,16 @@
 	            	<h3>Product code :PC0056</h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#treatmentcare3" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+			</div>
         </div>
         <!--- END TREATMENT CARE'S PRODUCTS DETAIL PAGES-->
         <!--- BODY CARE PRODUCT LIST -->
 		<div data-role="page" id="body-care">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>BODY CARE</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li><a href="#bodycare1" data-transition="slide">
@@ -1846,9 +2073,9 @@
 		 <!--- END OF BODY CARE PRODUCTS LIST -->
 		 <!--- START BODY CARE'S PRODUCTS DETAIL PAGES-->
         <div data-role="page" id="bodycare1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Moisturizer - Normal to Dry Skin - Shea-butter(100ml)</h1>
-				<a href="#bodycare2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Shea Butter 200ml-300x300.png">
@@ -1872,11 +2099,14 @@
 	            	<h3>Product code :PC0057 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#bodycare2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="bodycare2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Moisturizer - Normal to Dry Skin - Shea-butter(200ml)</h1>
-				<a href="#bodycare3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Shea Butter 200ml-300x300.png">
@@ -1900,10 +2130,15 @@
 	            	<h3>Product code :PC0058 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#bodycare1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#bodycare3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="bodycare3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Moisturizer - Oily skin Cucumber(100ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Silent-Valley-Moisturizer-300x300.png">
@@ -1927,12 +2162,16 @@
 	            	<h3>Product code :PC0059 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#bodycare2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	        </div>
         </div>
         <!--- END BODY CARE'S PRODUCTS DETAIL PAGES-->
         <!--- START HAIR CARE'S PRODUCTS DETAIL PAGES-->
         <div data-role="page" id="hair-care">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Silent Valley Hair Serum (50ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Sun screeen cream 0229-300x300.png">
@@ -1961,8 +2200,9 @@
         <!--- END HAIR CARE'S PRODUCTS DETAIL PAGES-->
         <!--- AROMATHERAPY PRODUCTS LIST-->
 		<div data-role="page" id="aromatherapy">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>AROMATHERAPY</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li><a href="#aromatherapy1" data-transition="slide">
@@ -2024,9 +2264,9 @@
 		<!--- END OF AROMATHERAPY PRODUCTS LIST-->
 		 <!--- START AROMATHERAPY PRODUCTS DETAIL PAGES-->
         <div data-role="page" id="aromatherapy1">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>>Anti Aging (10ml)</h1>
-				<a href="#aromatherapy2" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Anti aging 0207-300x300.png">
@@ -2046,11 +2286,14 @@
 	            	<h3>Product code :PC0061 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy2" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy2">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Aromatherapy Bundle</h1>
-				<a href="#aromatherapy3" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Aramotherapy-300x300.png">
@@ -2070,11 +2313,15 @@
 	            	<h3>Product code :PC0062 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy1" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy3" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy3">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Competitor (10ml)</h1>
-				<a href="#aromatherapy4" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Silentvalley - Competitor (Aromatherapy)-300x300.png">
@@ -2094,11 +2341,15 @@
 	            	<h3>Product code :PC0063 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy2" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy4" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy4">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Insomnia (10ml)</h1>
-				<a href="#aromatherapy5" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Silentvalley - Insomnia (Aromatherapy)-300x300.png">
@@ -2119,11 +2370,15 @@
 	            	<h3>Product code :PC0064 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy3" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy5" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
          <div data-role="page" id="aromatherapy5">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Purifying (10ml)</h1>
-				<a href="#aromatherapy6" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Silentvalley - Purifying (Aromatherapy)-300x300.png">
@@ -2143,11 +2398,15 @@
 	            	<h3>Product code :PC0065 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy4" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy6" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy6">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Soothing (10ml)</h1>
-				<a href="#aromatherapy7" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Soothing 0211-300x300.png">
@@ -2167,11 +2426,15 @@
 	            	<h3>Product code :PC0066 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy5" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy7" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy7">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Stress S.O.S (10ml)</h1>
-				<a href="#aromatherapy8" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Happy Body - Stress SOS (Aromatherapy)-300x300.png">
@@ -2191,11 +2454,15 @@
 	            	<h3>Product code :PC0067 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy6" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy8" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy8">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Wake Up (10ml)</h1>
-				<a href="#aromatherapy9" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Happy Body - Stress SOS (Aromatherapy)-300x300.png">
@@ -2215,11 +2482,15 @@
 	            	<h3>Product code :PC0068 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy7" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy9" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy9">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Zentiude (10ml)</h1>
-				<a href="#aromatherapy10" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Happy Body - Zenitude (Aromatherapy)-300x300.png">
@@ -2239,11 +2510,15 @@
 	            	<h3>Product code :PC0069 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy8" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy10" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy10">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Blood Flow (10ml)</h1>
-				<a href="#aromatherapy11" data-transition="slide" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Happy Body - Zenitude (Aromatherapy)-300x300 (1).png">
@@ -2263,10 +2538,15 @@
 	            	<h3>Product code :PC0070 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy9" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+	            <a href="#aromatherapy11" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+			</div>
         </div>
         <div data-role="page" id="aromatherapy11">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Purspace (10ml)</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
                 <img src="img/silent_valley/Pur space 0201-300x300.png">
@@ -2286,13 +2566,20 @@
 	            	<h3>Product code :PC0071 </h3>
 	            </div>
             </div>
+            <div data-role="footer" data-position="fixed">
+	            <a href="#aromatherapy10" data-transition="slide" data-direction="reverse" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+			</div>
         </div>
         <!--- END AROMATHERAPY PRODUCTS DETAIL PAGES-->
         <!-- ABOUT US PAGE -->
         <div data-role="page" id="about-us">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>About Us</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/about1.jpg" width="490px">
+            </div>
 	            <div class="ui-body ui-body-a" align="center" >
 	            	<p><b>BRINGING FRAGRANCE TO LIFE</b><br><br>
 					<br>Dinesh S. Patel established SFP Sons India Pvt. Ltd in the year 1992 with the noble intention of bringing ‘fragrance to life’. Today SFP is a globally acclaimed company for its perfumes and body care products with export over 25 countries and still going. Maintaining global standards by using high quality raw materials from all over the world, following the best practices in the industry and combining traditional systems with modern technologies has lead to this sustainability of growth.
@@ -2306,8 +2593,9 @@
         <!--END OF ABOUT US PAGE -->
         <!-- CONTACT US PAGE -->
         <div data-role="page" id="contact-us">
-			<div data-role="header" data-add-back-btn="true" data-rel="back">
+			<div data-role="header" >
 				<h1>Contact Us</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 	            <div class="ui-body ui-body-a" align="center" >
 	            	<p><b>Address :</b><br><br>
@@ -2321,8 +2609,8 @@
 					<br>Sales : sales@sfpperfumes.com
 					<br>Orders : order@sfpperfumes.com
 					<br>Support: support@sfpperfumes.com
-					<p><b>Telephone :</b><br>
-					<br>91-44-22624230 / 219 / 242
+					<p><b>Telephone :</b><br><br>
+					<a href="tel:+91 4422624230"><i class="fa fa-phone"></i></a> +91 4422624230
 	            	</p>
 	            </div>
             </div>

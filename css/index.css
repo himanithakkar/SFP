@@ -4,3 +4,16 @@
   margin-right:0 auto;
   height: 80%; 
 }
+.footer-button-left,
+.footer-button-right {
+	position: absolute;
+	margin: 0;
+	top: auto;
+	bottom: 3em;
+}
+.footer-button-left {
+	left: 0.4em;
+}
+.footer-button-right {
+	right: 0.4em;
+}
