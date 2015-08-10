@@ -1,10 +1,11 @@
 .product_image {
   text-align: center;
-  width: 100% \9;
+  width: 100%;
   max-width: 100%;
   height: auto;
   border: 0;
 }
+img.expand {  }
 
 .footer-button-left,
 .footer-button-right {
