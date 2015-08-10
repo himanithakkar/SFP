@@ -1,8 +1,7 @@
 .product_image {
   text-align: center;
-  margin-left:0 auto;
-  margin-right:0 auto;
-  height: 70%; 
+  width:100%;
+  border: 0;
 }
 .footer-button-left,
 .footer-button-right {
@@ -16,4 +15,7 @@
 }
 .footer-button-right {
 	right: 0.4em;
+}
+.ui-header .ui-title {
+    white-space: normal;
 }
