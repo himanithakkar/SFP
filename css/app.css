@@ -22,7 +22,7 @@
 .ui-header .ui-title {
     white-space: normal;
 }
-ul li h2 {
+ul li {
     white-space: normal !important;
     word-wrap:break-word;
     overflow-wrap: break-word;
