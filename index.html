@@ -1,4 +1,4 @@
-S
+
 <!DOCTYPE html> 
 <html lang="en">
 	<head>
@@ -8,9 +8,11 @@ S
 		<link rel="stylesheet" href="css/app.css"/>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:700,600,500,400,300"/>
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/photoswipe.css"> 
+		<link rel="stylesheet" href="css/default-skin/default-skin.css">
+		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
-		<script src="js/map.js"></script>
 		<style>
 			#home .ui-header {
     		background: #ffffff;
@@ -33,7 +35,7 @@ S
 				<li><a href="#about-us" data-transition="slide">ABOUT US</a></li>
 				<li><a href="#contact-us" data-transition="slide">CONTACT US</a></li>
 				<li><a href="#downloads" data-transition="slide">DOWNLOADS</a></li>
-			<!--	<li class="gallery"><a href="#gallery" data-transition="slide">GALLERY</a></li> -->
+				<li><a href="#gallery" data-transition="slide">GALLERY</a></li>
 			</ul>
 		</div>
 		<!-- END OF HOME PAGE -->
@@ -129,7 +131,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-            	<a href="#deo1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+            	<a href="#deo1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
             	<a href="#deo3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -157,7 +159,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#deo2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            	<a href="#deo2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -185,7 +187,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#deo3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            	<a href="#deo3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            	<a href="#deo5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -213,7 +215,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            	<a href="#deo6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -241,7 +243,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 			</div>
         </div>
         <!--END OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
@@ -330,7 +332,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#air-freshner1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            	<a href="#air-freshner1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            	<a href="#air-freshner3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -358,7 +360,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#air-freshner2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#air-freshner2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#air-freshner4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -386,7 +388,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#air-freshner3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#air-freshner3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 			</div>
         </div>
         <!-- END OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
@@ -642,7 +644,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#crazymoments1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#crazymoments1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#crazymoments3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -670,7 +672,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#crazymoments2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#crazymoments2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	           <!-- <a href="#crazymoments" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> -->
 			</div>
         </div>
@@ -726,7 +728,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -753,7 +755,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -780,7 +782,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -807,7 +809,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -835,7 +837,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -862,7 +864,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan8" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -889,7 +891,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan9" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -917,7 +919,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan10" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -944,7 +946,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan11" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -972,7 +974,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan12" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -999,7 +1001,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan11" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan11" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan13" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1026,7 +1028,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan12" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan12" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan14" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1053,7 +1055,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan13" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan13" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan15" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1080,7 +1082,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan14" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan14" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan16" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1107,7 +1109,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan15" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan15" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan17" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1134,7 +1136,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan16" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan16" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan18" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1161,7 +1163,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan17" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan17" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan19" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1188,7 +1190,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan18" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan18" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan20" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1215,7 +1217,7 @@ S
 	            </div>
             </div>
              <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan19" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan19" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan21" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> 
 			</div>
         </div>
@@ -1242,7 +1244,7 @@ S
 	            </div>
             </div>
              <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan20" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan20" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan22" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1269,7 +1271,7 @@ S
 	            </div>
             </div>
              <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan21" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan21" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan23" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1296,7 +1298,7 @@ S
 	            </div>
             </div>
              <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan22" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan22" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan24" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1323,7 +1325,7 @@ S
 	            </div>
             </div>
              <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#ahsan23" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#ahsan23" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <!-- <a href="#ahsan" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> -->
 			</div>
         </div>
@@ -1381,7 +1383,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#jass1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#jass1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#jass4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1408,7 +1410,7 @@ S
 	            </div>
             </div>
              <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#jass3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#jass3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#jass5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1435,7 +1437,7 @@ S
 	            </div>
             </div>
              <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#jass4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#jass4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#jass6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1462,7 +1464,7 @@ S
 	            </div>
             </div>
              <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#jass5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#jass5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <!--<a href="#jass7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> -->
 			</div>
         </div>
@@ -1669,7 +1671,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1697,7 +1699,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1725,7 +1727,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1752,7 +1754,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1779,7 +1781,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1806,7 +1808,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan8" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1833,7 +1835,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan9" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1860,7 +1862,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan10" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1887,7 +1889,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan11" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1914,7 +1916,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan12" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1941,7 +1943,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan11" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan11" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan13" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1968,7 +1970,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan12" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan12" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan14" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1995,7 +1997,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan13" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan13" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan15" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2022,7 +2024,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan14" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan14" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan16" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2049,7 +2051,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan15" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan15" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan17" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2076,7 +2078,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan16" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan16" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan18" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2103,7 +2105,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan17" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan17" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan19" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2130,7 +2132,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan18" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan18" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan20" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2157,7 +2159,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan19" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan19" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan21" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2184,7 +2186,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan20" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan20" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan22" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2211,7 +2213,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan21" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan21" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan23" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2238,7 +2240,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan22" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan22" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan24" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2265,7 +2267,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan23" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan23" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan25" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2292,7 +2294,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan24" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#attarahsan24" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <!-- <a href="#attarahsan25" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> -->
 			</div>
         </div>
@@ -2412,7 +2414,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2439,7 +2441,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2466,7 +2468,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2493,7 +2495,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2520,7 +2522,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2547,7 +2549,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki8" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2574,7 +2576,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki9" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2601,7 +2603,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki10" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2628,7 +2630,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#malaki11" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2655,7 +2657,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#malaki10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#malaki10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <!-- <a href="#malaki" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> -->
 			</div>
         </div>
@@ -2746,7 +2748,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#taibah1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#taibah1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#taibah3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2773,7 +2775,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#taibah2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#taibah2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#taibah4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2800,7 +2802,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#taibah3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#taibah3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#taibah5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2827,7 +2829,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#taibah4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#taibah4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <!--<a href="#taibah5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> -->
 			</div>
         </div>
@@ -2923,7 +2925,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#salaam1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#salaam1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#salaam3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2950,7 +2952,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#salaam2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#salaam2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#salaam4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -2977,7 +2979,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#salaam3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#salaam3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#salaam5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3004,7 +3006,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#salaam4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#salaam4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#salaam6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3031,7 +3033,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#salaam5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#salaam5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	           <!-- <a href="#salaam6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>-->
 			</div>
 		</div>
@@ -3060,6 +3062,7 @@ S
 				<h1>FACE CARE</h1>
 				<a href="#slient-valley" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
+			<ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li role="list-divider">FACE WASH</li>
 				<li><a href="#facewash2" data-transition="slide">
 					<img src="img/silent_valley/face wash gel.png">
@@ -3207,7 +3210,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#fair-skin1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#fair-skin1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 			</div>
         </div>
          <!-- END OF FAIR SKIN PRODUCTS -->
@@ -3334,7 +3337,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#treatmentcare1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#treatmentcare1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#treatmentcare3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3361,7 +3364,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#treatmentcare2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#treatmentcare2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#treatmentcare4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3388,7 +3391,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#treatmentcare3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#treatmentcare3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 			</div>
         </div>
         <!--- END TREATMENT CARE'S PRODUCTS DETAIL PAGES-->
@@ -3471,7 +3474,7 @@ S
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
             	<a href="#bodycare3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-	            <a href="#bodycare1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#bodycare1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	        </div>
         </div>
         <div data-role="page" id="bodycare3">
@@ -3504,7 +3507,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#bodycare2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#bodycare2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	        </div>
         </div>
         <!--- END BODY CARE'S PRODUCTS DETAIL PAGES-->
@@ -3659,7 +3662,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#aromatherapy4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3688,7 +3691,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#aromatherapy5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3716,7 +3719,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#aromatherapy6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3744,7 +3747,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#aromatherapy7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3772,7 +3775,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#aromatherapy8" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3800,12 +3803,12 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#aromatherapy9" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
         <div data-role="page" id="aromatherapy9">
-			<div data-role="header" data-position="fixed" 
+			<div data-role="header" data-position="fixed" >
 				<h1>Zentiude (10ml)</h1>
 				<a href="#aromatherapy" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
@@ -3828,7 +3831,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#aromatherapy10" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3856,7 +3859,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#aromatherapy11" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -3884,7 +3887,7 @@ S
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left"></a>
+	            <a href="#aromatherapy10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 			</div>
         </div>
         <!--- END AROMATHERAPY PRODUCTS DETAIL PAGES-->
@@ -3946,48 +3949,189 @@ S
 				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 	            <div class="ui-body ui-body-a">
-	            	<p>
-	            	<a href="https://www.dropbox.com/s/7m06saiot3zlyj9/SILENT%20VALLEY-%20BOOK%20LET.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>Download Silent Valley Perfumes Booklet
+	            	<a href="https://www.dropbox.com/s/7m06saiot3zlyj9/SILENT%20VALLEY-%20BOOK%20LET.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>Download Silent Valley Perfumes Booklet
 					<br>
-					<a href="https://www.dropbox.com/s/wkl3ysirxfp005i/pamphlet.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+					<a href="https://www.dropbox.com/s/wkl3ysirxfp005i/pamphlet.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 					Download Silent Valley Perfumes Pamphlet
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/zqulb4a5vou4yo2/TARA%20ROOM%20FRESHNER.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/zqulb4a5vou4yo2/TARA%20ROOM%20FRESHNER.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Tara Room Freshner Pamphlet
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/uif8fqz5nliu85g/Ahsan%20Sales%20Detailer%20-%20Hindi.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/uif8fqz5nliu85g/Ahsan%20Sales%20Detailer%20-%20Hindi.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Ahsan Sales Detailer
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/kc9wfcnzhvpyqc4/Jass%20salesdetailer%20-%20Hindi.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/kc9wfcnzhvpyqc4/Jass%20salesdetailer%20-%20Hindi.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Jass Sales Detailer - Hindi
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/ou3ufhc9h3sk7w8/Jass%20salesdetailer%20-%20Tamil.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/ou3ufhc9h3sk7w8/Jass%20salesdetailer%20-%20Tamil.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Jass Sales Detailer - Tamil
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/4te0auvu7ccpnej/Revo%20sales%20detailer.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/4te0auvu7ccpnej/Revo%20sales%20detailer.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Revo Sales Detailer
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/d7fng6np7aiic6t/AIR%20FRESHNER%20PRICE%20LIST.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/d7fng6np7aiic6t/AIR%20FRESHNER%20PRICE%20LIST.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Air Freshner Price List
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/8rbfkwcixcpoa4w/ATTAR%20PRICE%20LIS1.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/8rbfkwcixcpoa4w/ATTAR%20PRICE%20LIS1.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Attar Price List
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/ez0ogxocuit8lco/DEODRANT%20PRICE%20LIST.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/ez0ogxocuit8lco/DEODRANT%20PRICE%20LIST.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Deodorant Price List
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/ldf7188r2wj7g91/PERFUME%20PRICE%20LIST.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/ldf7188r2wj7g91/PERFUME%20PRICE%20LIST.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Perfume Price List
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/5wsaqt716dykdnn/SILENT%20VALLEY1.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/5wsaqt716dykdnn/SILENT%20VALLEY1.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Silent Valley personal care Price List
 	            	<br>
-	            	<a href="https://www.dropbox.com/s/a32qunt6q3vxijw/SILENT%20VALLEY2.pdf?dl=0" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
+	            	<a href="https://www.dropbox.com/s/a32qunt6q3vxijw/SILENT%20VALLEY2.pdf?dl=1" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-d ui-btn-icon-notext ui-btn-b ui-btn-inline"></a>
 	            	Download Silent Valley Aromatherapy Price List
 	            	</p>
 	            </div>
             </div>
         </div>
         <!--END OF DOWNLOADS PAGE -->
+        <div data-role="page" id="gallery">
+        	<div data-role="header" data-position="fixed" >
+				<h1>GALLERY</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			 <center><h2>Banners</h2></center>
+
+        	  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+        	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        	      <a href="img/banners/Jass.jpg" itemprop="contentUrl" data-size="2763x650">
+        	          <img src="img/banners/Jass.jpg" itemprop="thumbnail" alt="Image description" />
+        	      </a>
+        	      <figcaption itemprop="caption description">JASS</figcaption>
+        	    </figure>
+
+        	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        	      <a href="img/banners/silent.jpg" itemprop="contentUrl" data-size="2763x650">
+        	          <img src="img/banners/silent.jpg" itemprop="thumbnail" alt="Image description" />
+        	      </a>
+        	      <figcaption itemprop="caption description">SILENT VALLEY</figcaption>
+        	    </figure>
+
+        	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        	      <a href="img/banners/Tara.jpg" itemprop="contentUrl" data-size="2763x650">
+        	          <img src="img/banners/Tara.jpg" itemprop="thumbnail" alt="Image description" />
+        	      </a>
+        	      <figcaption itemprop="caption description">TARA</figcaption>
+        	    </figure>
+        	  </div>
+        	<center><h2>Price List</h2></center>
+
+        	  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+        	  	<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        	      <a href="img/price_list/ATTAR PRICE LIST.jpg" itemprop="contentUrl" data-size="950x1996">
+        	          <img src="img/price_list/ATTAR PRICE LIST.jpg" itemprop="thumbnail" alt="Image description" />
+        	      </a>
+        	      <figcaption itemprop="caption description">ATTAR PRICE LIST</figcaption>
+        	    </figure>
+
+        	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        	      <a href="img/price_list/PERFUME PRICE LIST.jpg" itemprop="contentUrl" data-size="950x1120">
+        	          <img src="img/price_list/PERFUME PRICE LIST.jpg" itemprop="thumbnail" alt="Image description" />
+        	      </a>
+        	                                          <figcaption itemprop="caption description">PERFUME PRICE LIST</figcaption>
+        	                                          
+        	    </figure>
+
+        	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        	      <a href="img/price_list/AIR FRESHNER PRICE LIST.jpg" itemprop="contentUrl" data-size="950x924">
+        	          <img src="img/price_list/AIR FRESHNER PRICE LIST.jpg" itemprop="thumbnail" alt="Image description" />
+        	      </a>
+        	      <figcaption itemprop="caption description">AIR FRESHNER PRICE LIST</figcaption>
+        	    </figure>
+
+        	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        	      <a href="img/price_list/DEODRANT PRICE LIST.jpg" itemprop="contentUrl" data-size="950x924">
+        	          <img src="img/price_list/DEODRANT PRICE LIST.jpg" itemprop="thumbnail" alt="Image description" />
+        	      </a>
+        	      <figcaption itemprop="caption description">DEODRANT PRICE LIST</figcaption>
+        	    </figure>
+
+        	    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        	      <a href="img/price_list/SILENT VALLEY PRICE LIST.jpg" itemprop="contentUrl" data-size="877x738">
+        	          <img src="img/price_list/SILENT VALLEY PRICE LIST.jpg" itemprop="thumbnail" alt="Image description" />
+        	      </a>
+        	      <figcaption itemprop="caption description">SILENT VALLEY PRICE LIST</figcaption>
+        	    </figure>
+        	  </div>
+
+
+
+        	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+        	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        	    <!-- Background of PhotoSwipe. 
+        	         It's a separate element, as animating opacity is faster than rgba(). -->
+        	    <div class="pswp__bg"></div>
+
+        	    <!-- Slides wrapper with overflow:hidden. -->
+        	    <div class="pswp__scroll-wrap">
+
+        	        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        	        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        	        <div class="pswp__container">
+        	            <div class="pswp__item"></div>
+        	            <div class="pswp__item"></div>
+        	            <div class="pswp__item"></div>
+        	        </div>
+
+        	        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        	        <div class="pswp__ui pswp__ui--hidden">
+
+        	            <div class="pswp__top-bar">
+
+        	                <!--  Controls are self-explanatory. Order can be changed. -->
+
+        	                <div class="pswp__counter"></div>
+
+        	                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+        	                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+        	                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+        	                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+        	                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+        	                <!-- element will get class pswp__preloader--active when preloader is running -->
+        	                <div class="pswp__preloader">
+        	                    <div class="pswp__preloader__icn">
+        	                      <div class="pswp__preloader__cut">
+        	                        <div class="pswp__preloader__donut"></div>
+        	                      </div>
+        	                    </div>
+        	                </div>
+        	            </div>
+
+        	            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        	                <div class="pswp__share-tooltip"></div> 
+        	            </div>
+
+        	            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        	            </button>
+
+        	            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        	            </button>
+
+        	            <div class="pswp__caption">
+        	                <div class="pswp__caption__center"></div>
+        	            </div>
+
+        	          </div>
+
+        	        </div>
+
+        	</div>
+        </div></div>
+        <script src="js/photoswipe.js"></script>
+		<script src="js/photoswipe-ui-default.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
