@@ -1,6 +1,9 @@
 .my-gallery {
   width: 100%;
   float: left;
+  padding-left:10px;
+  padding-top:10px;
+  position: center;
 }
 .my-gallery img {
   width: 100%;
