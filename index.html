@@ -19,6 +19,28 @@
     		border-bottom:10px solid #3a2d1d;
 			}
 		</style>
+		<script>
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+						function onDeviceReady() {
+						    document.addEventListener("backbutton", onBackKeyDown, false); //Listen to the User clicking on the back button
+						}
+
+						function onBackKeyDown(event) {
+						   event.preventDefault();
+						    navigator.notification.confirm("Are you sure you want to exit ?", onConfirm, "Confirmation", "Yes,No"); 
+						    // Prompt the user with the choice
+						}
+
+						function onConfirm(button) {
+						    if(button==2){//If User selected No, then we just do nothing
+						        return;
+						    }else{
+						        navigator.app.exitApp();// Otherwise we quit the app.
+						    }
+						}
+
+		</script>
 	</head>
 	<body>
 		<!-- START OF HOME PAGE -->	
@@ -57,6 +79,11 @@
 					<h2>Revo Deodorant spray Violent(100ml)</h2>
 					<p>Rs.160.00</p></a>
 				</li>
+				<li><a href="#deo7" data-transition="slide">
+					<img src="img/deodorant/REVO DEODORANT POWDER SPRAY ANTI BACTERIAL (75 g).png">
+					<h2>REVO Deodorant Powder Spray ANTI - BACTERIAL (75 g)</h2>
+					<p>Rs.300.00</p></a>
+				</li>
 				<li role="list-divider">TARA</li>
 				<li><a href="#deo3" data-transition="slide">
 					<img src="img/deodorant/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
@@ -78,6 +105,7 @@
 					<h2>Tara Insta Cool Body Deo (100ml)</h2>
 					<p>Rs.145.00</p></a>
 				</li>
+
 			</ul>-
 		</div><!-- END OF DEODORANT'S LIST PAGE -->
 		<!-- START OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
@@ -132,6 +160,43 @@
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
             	<a href="#deo1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+            	<a href="#deo7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="deo7">
+			<div data-role="header" data-position="fixed">
+			<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+				<h1>REVO Deodorant Powder Spray ANTI - BACTERIAL (75 g)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/REVO DEODORANT POWDER SPRAY ANTI BACTERIAL (75 g).png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.300.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Advance Technology pump-sprayer that holds a unique formula with an active anti-bacterial agent that complements a sound regimen of hygiene and skin care.  REVO contains Farnesol, found in Palmarosa and Chamomile oils helps to destroy odour-causing microbes in sweat.
+Be empowered
+·         Never let body odour hold you back
+
+·         Keep yourself stench free at all times
+
+·         Enlighten others who suffer the burden of body odour
+
+·         Resist the stench and prevail against it with REVO dry bath powder
+
+FORGET BODY ODOUR EVER EXISTED</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : PC0002</h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+            	<a href="#deo2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
             	<a href="#deo3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
@@ -1210,7 +1275,7 @@
 	            	<h3>Description</h3>
 	            </div>
 	            <div class="ui-body ui-body-a">
-	            	<p>An excellent combinaiton pf bergamnot at top and sandalwood notes at the base, gives excellent makes this oriental fragrance.</p>
+	            	<p>An excellent combination of bergamot at top and sandalwood , Saffron, Musk and Amber notes at the base, gives the fragrance an excellent blend when mingled with spicy and floral heart note .</p>
 	            </div>
 	            <div class="ui-bar ui-bar-a">
 	            	<h3>Product code :PC0033 </h3>
@@ -1481,6 +1546,7 @@
 				<li><a href="#malaki" data-transition="slide">MALAKI</a></li>
 				<li><a href="#taibah" data-transition="slide">TAIBAH</a></li>
 				<li><a href="#salaam" data-transition="slide">MUKHALAT AL-SALAAM</a></li>
+				<li><a href="#pooja" data-transition="slide">ATTAR POOJA</a></li>
 			</ul>
 		</div>
 		<!-- END OF ATTAR'S LIST PAGE -->
@@ -3038,6 +3104,49 @@
 			</div>
 		</div>
 		<!-- END OF PRODUCT DETAIL PAGES OF ATTAR SALAAM CATEGORY -->
+		<!-- START OF ATTAR POOJA'S LIST PAGE -->
+		<div data-role="page" id="pooja">
+			<div data-role="header" data-position="fixed" >
+				<h1>Attar Pooja</h1>
+				<a href="#attar" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+       		 <ul data-role="listview" data-inset="true" data-divider-theme="a">
+				<li><a href="#pooja1" data-transition="slide">
+					<img src="img/attar/Attar Puja(3ml).png">
+					<h2>ATTAR PUJA (3 ml x 6 bottles)</h2>
+					<p>Rs.120.00</p></a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="page" id="pooja1">
+			<div data-role="header" data-position="fixed" >
+				<h1>ATTAR PUJA (3 ml x 6 bottles)</h1>
+				<a href="#salaam" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/Attar Puja(3ml).png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.120.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>The power of scent and its virtues have been recognized by religion since ancient times.  It induces the subtle sensory memory and directly stimulates the body and nervous system which enhances the psycho spiritual well being.
+The sync between love and flowers doesn’t end on a bouquet, but transcends beyond the physical realm, for instance, rose oil is used to heal and open the heart on the spiritual level and jasmine offers clarity and spiritual calm. The blend of thoughtfully accorded fragrance of Attar Puja stimulates the mind, spirit and the mental focus.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0089 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <!--<a href="#salaam5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#salaam6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>-->
+			</div>
+		</div>
+		<!-- END OF ATTAR POOJA'S LIST PAGE -->
 		<!-- END OF ATTAR CATEGORY -->
         <!-- START OF SILENT VALLEY'S LIST PAGE -->
         <div data-role="page" id="slient-valley">
@@ -3468,8 +3577,8 @@
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-            	<!--<a href="#bodycare3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>-->
-	            <a href="#bodycare1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a> 
+            	<a href="#bodycare3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+	            <a href="#bodycare1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	        </div>
         </div>
         
@@ -3889,10 +3998,9 @@
 	            </div>
             </div>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#aromatherapy11" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#aromatherapy10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	        </div>
         </div>
-
         <!--- END AROMATHERAPY PRODUCTS DETAIL PAGES-->
         <!--- END SILENT VALLEY  PRODUCTS -->
         <!-- START OF ABOUT US PAGE -->
