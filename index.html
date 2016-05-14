@@ -1,9 +1,9 @@
-
 <!DOCTYPE html> 
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS links -->
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
 		<link rel="stylesheet" href="css/app.css"/>
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:700,600,500,400,300"/>
@@ -11,15 +11,18 @@
 		<link rel="stylesheet" href="css/photoswipe.css"> 
 		<link rel="stylesheet" href="css/default-skin/default-skin.css">
 		<link rel="stylesheet" href="css/style.css">
+		<!-- -->
+		<!-- jQuery javaScript links -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<!-- -->
 		<style>
 			#home .ui-header {
     		background: #ffffff;
-    		border-bottom:10px solid #3a2d1d;
+    		border-bottom:10px solid #04ce7b;
 			}
 		</style>
-		<script>
+		<!--<script>
 			document.addEventListener("deviceready", onDeviceReady, false);
 
 						function onDeviceReady() {
@@ -39,7 +42,29 @@
 						        navigator.app.exitApp();// Otherwise we quit the app.
 						    }
 						}
+						function exit(){
+							
 
+						}
+
+		</script>-->
+		<script>
+
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+					function onDeviceReady() {
+	   				 blackberry.system.event.onHardwareKey(blackberry.system.event.KEY_BACK, 
+	    			function() {   
+	        			if ($.mobile.activePage.attr('id') == 'page') { 
+	         				blackberry.app.exit();
+	         			return false;
+	        		} 
+	        		else { 
+	         			history.back(); 
+	          		return false;
+	        		} 
+	    		}); 
+			}
 		</script>
 	</head>
 	<body>
@@ -48,415 +73,21 @@
 			<div data-role="header" align="center">
       			<img border="0" src="img/Logo-3.png" alt="Logo, Facebook" height="40px" vspace="2"/>
 			</div>
+			<!--Main menu -->
 			<ul data-role="listview" data-inset="true" class="ui-alt-icon">
-				<li><a href="#deodorant" data-transition="slide">DEODORANT</a></li>
-				<li><a href="#home-fragrance" data-transition="slide">HOME FRAGRANCE</a></li>
 				<li><a href="#perfume" data-transition="slide">PERFUME</a></li>
+				<li><a href="#deodorant" data-transition="slide">DEODORANT</a></li>
 				<li><a href="#attar" data-transition="slide">ATTAR</a></li>
+				<li><a href="#home-fragrance" data-transition="slide">HOME FRAGRANCE</a></li>
 				<li><a href="#slient-valley" data-transition="slide">SILENT VALLEY</a></li>
 				<li><a href="#about-us" data-transition="slide">ABOUT US</a></li>
 				<li><a href="#contact-us" data-transition="slide">CONTACT US</a></li>
 				<li><a href="#downloads" data-transition="slide">DOWNLOADS</a></li>
 				<li><a href="#gallery" data-transition="slide">GALLERY</a></li>
 			</ul>
+			<!-- end of Main menu -->
 		</div>
 		<!-- END OF HOME PAGE -->
-		<!-- START OF DEODORANT'S LIST PAGE -->
-		<div data-role="page" id="deodorant">
-			<div data-role="header" data-position="fixed">
-				<h1>DEODORANT</h1>
-				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<ul data-role="listview" data-inset="true" data-divider-theme="a">
-				<li role="list-divider">REVO</li>
-				<li><a href="#deo1" data-transition="slide">
-					<img src="img/deodorant/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
-					<h2>Revo Deodorant spray Blue (100ml)</h2>
-					<p>Rs.160.00</p></a>
-				</li>
-				<li><a href="#deo2" data-transition="slide">
-					<img src="img/deodorant/Revo-Deodorant-spray-Violet-500x500.min-400x400.png">
-					<h2>Revo Deodorant spray Violent(100ml)</h2>
-					<p>Rs.160.00</p></a>
-				</li>
-				<li><a href="#deo7" data-transition="slide">
-					<img src="img/deodorant/REVO DEODORANT POWDER SPRAY ANTI BACTERIAL (75 g).png">
-					<h2>REVO Deodorant Powder Spray ANTI - BACTERIAL (75 g)</h2>
-					<p>Rs.300.00</p></a>
-				</li>
-				<li role="list-divider">TARA</li>
-				<li><a href="#deo3" data-transition="slide">
-					<img src="img/deodorant/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
-					<h2>Tara Vetiver Delight Body Deo (100ml)</h2>
-					<p>Rs.145.00</p></a>
-				</li>
-				<li><a href="#deo4" data-transition="slide">
-					<img src="img/deodorant/Tara-Blue-500x500-400x400.png">
-					<h2>Tara Blue Body Deo (100ml)</h2>
-					<p>Rs.145.00</p></a>
-				</li>
-				<li><a href="#deo5" data-transition="slide">
-					<img src="img/deodorant/Tara-Mile-Stone-500x500-500x500.min-400x400.png">
-					<h2>Tara Milestone Body Deo (100ml)</h2>
-					<p>Rs.145.00</p></a>
-				</li>
-				<li><a href="#deo6" data-transition="slide">
-					<img src="img/deodorant/Tara-Insta-Cool-Body-Deo-500x500-500x500.min-400x400.png">
-					<h2>Tara Insta Cool Body Deo (100ml)</h2>
-					<p>Rs.145.00</p></a>
-				</li>
-
-			</ul>-
-		</div><!-- END OF DEODORANT'S LIST PAGE -->
-		<!-- START OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
-		<div data-role="page" id="deo1">
-			<div data-role="header" data-position="fixed" >
-			<a href="#deodorant" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-				<h1>Revo Deodorant spray Blue (100ml)</h1>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/deodorant/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.160.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Buy REVO Deodorant Spray Blue online which is a highly effective anti-bacterial deodorant spray. This is a water based spray and contains no aerosol, guaranteeing ample application with every spray. REVO Deodorant Spray Blue contains Farnesol which is found in Palmarosa and Chamomille oils. Farnesol is an anti-bacterial agent that destroys odour-causing microbes.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code : PC0001 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-            	<a href="#deo2"  data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-
-        <div data-role="page" id="deo2">
-			<div data-role="header" data-position="fixed">
-			<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-				<h1>Revo Deodorant spray Violet (100ml)</h1>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/deodorant/Revo-Deodorant-spray-Violet-500x500.min-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.160.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Your search ends here for a powerful strong antibacterial deodorant.   REVO Deodorant Spray Violet  is a water based spray and contains no aerosol, guaranteeing ample application with every spray. This deodorant Spray contains Farnesol which is found in Palmarosa and Chamomille oils. Farnesol is an anti-bacterial agent that destroys odour-causing microbes</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code : PC0002</h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-            	<a href="#deo1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-            	<a href="#deo7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="deo7">
-			<div data-role="header" data-position="fixed">
-			<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-				<h1>REVO Deodorant Powder Spray ANTI - BACTERIAL (75 g)</h1>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/deodorant/REVO DEODORANT POWDER SPRAY ANTI BACTERIAL (75 g).png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.300.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Advance Technology pump-sprayer that holds a unique formula with an active anti-bacterial agent that complements a sound regimen of hygiene and skin care.  REVO contains Farnesol, found in Palmarosa and Chamomile oils helps to destroy odour-causing microbes in sweat.
-Be empowered
-·         Never let body odour hold you back
-
-·         Keep yourself stench free at all times
-
-·         Enlighten others who suffer the burden of body odour
-
-·         Resist the stench and prevail against it with REVO dry bath powder
-
-FORGET BODY ODOUR EVER EXISTED</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code : PC0002</h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-            	<a href="#deo2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-            	<a href="#deo3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="deo3">
-			<div data-role="header" data-position="fixed" >
-				<h1>Tara Vetiver Delight Body Deo (100ml)</h1>
-				<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/deodorant/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.145.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Tara Vetiver Delight Body Deo spray is an aromatic fragrance for men that bring a touch of excitement to everything you do. Lavender, Rosemary and spices mixed with Patchouli to create a distinctive scent.  Buy Tara Vetiver Delight Body Deo online for a casual occasions.  Apply it to your pulse points before you leave the house, and enjoy the attention this masculine fragrance brings throughout the day.
-					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0003 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#deo2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="deo4">
-			<div data-role="header" data-position="fixed" >
-				<h1>Tara Blue Body Deo (100ml)</h1>
-				<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/deodorant/Tara-Blue-500x500-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.145.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Tara Blue Body deo with the invigorating scent of lemon and mandarin intermingled with geranium, rose and lily resting on a base of sandal, patchouli and soft musk with tempting vanilla  accord is designed to keep your freshness intact all through the day.  Buy Tara Blue body deodorant online to feel fresh all day long.
-					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0004 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#deo3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            	<a href="#deo5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="deo5">
-			<div data-role="header" data-position="fixed" >
-				<h1>Tara Milestone Body Deo (100ml)</h1>
-				<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/deodorant/Tara-Mile-Stone-500x500-500x500.min-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.145.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Tara Milestone Body Deo  is an electrifying scent combining light floral tones with musky hints, designed to get you the attention you deserve.  Buy this Deodorant online for a smooth and mellow fragrance and step out with confidence.
-					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0005</h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            	<a href="#deo6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="deo6">
-			<div data-role="header" data-position="fixed">
-				<h1>Tara Insta Cool Body Deo (100ml)</h1>
-				<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/deodorant/Tara-Insta-Cool-Body-Deo-500x500-500x500.min-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.145.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Buy Tara Insta Cool Body Deo online for an instant cooling effect thanks to a blend of enriching aquatic notes that keep you cool and vibrant all through the day. The fragrance of fresh woody tones is enticingly different.
-					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0006</h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-			</div>
-        </div>
-        <!--END OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
-		<!-- START OF HOME FRAGRANCE'S LIST PAGE -->
-		<div data-role="page" id="home-fragrance">
-			<div data-role="header" data-position="fixed" >
-				<h1>HOME FRAGRANCE</h1>
-				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<ul data-role="listview" data-inset="true" data-divider-theme="a">
-				<li role="list-divider">AIR FRESHNER</li>
-				<li><a href="#air-freshner1" data-transition="slide">
-					<img src="img/air_freshners/Tara Air Freshner Green Rose infusion-400x400.png">
-					<h2>Tara Green Air Freshner - Rose Infusion(250ml)</h2>
-					<p>Rs.145.00</p></a>
-				</li>
-				<li><a href="#air-freshner2" data-transition="slide">
-					<img src="img/air_freshners/Tara Air Freshner Green Lavender-400x400.png">
-					<h2>Tara Green Air Freshner - Lavender(250ml)</h2>
-					<p>Rs.145.00</p></a>
-				</li>
-				<li><a href="#air-freshner3" data-transition="slide">
-					<img src="img/air_freshners/Tara Air Freshner Green Sandalwood-400x400.png">
-					<h2>Tara Green Air Freshner - Sandal wood(250ml)</h2>
-					<p>Rs.145.00</p></a>
-				</li>
-				<li><a href="#air-freshner4" data-transition="slide">
-					<img src="img/air_freshners/Tara Air Freshner Green Jasmine-400x400.png">
-					<h2>Tara Green Air Freshner - Jasmine(250ml)</h2>
-					<p>Rs.145.00</p></a>
-				</li>
-			</ul>
-		</div>
-		<!-- END OF HOME FRAGRANCE'S LIST PAGE -->
-		<!-- START OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
-		<div data-role="page" id="air-freshner1">
-			<div data-role="header" data-position="fixed" >
-				<h1>Tara Green Air Freshner - Rose Infusion(250ml)</h1>				
-				<a href="#home-fragrance" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/air_freshners/Tara Air Freshner Green Rose infusion-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.145.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Presenting Tara green air freshener rose infusion online to experience the essence of rose extracts to make your ambience smell wonderfully fragrant.
-					Fragrance of rose is traditionally used to calm and uplift ones mood and can be attributed to its properties as an antidepressant.
-					Roses are widely considered as the most beautiful flowers in the world.  Its incomparable fragrance can invoke romantic feelings even in the hardest of hearts.
-					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0007</h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#air-freshner2" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="air-freshner2">
-			<div data-role="header" data-position="fixed" >
-				<h1>Tara Green Air Freshner - Lavender(250ml)</h1>
-				<a href="#home-fragrance" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/air_freshners/Tara Air Freshner Green Lavender-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.145.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Buy Tara Green Air Freshner Lavender online and spray it on your bed spreads, sofas and screens to fill the atmosphere for yourself and for your guest with a distinctive aroma of refreshing fragrance.  Lavender is used to treat anxiety, headaches, depression and improves the state of mind and body by inducing calming effect.
-					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0008</h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            	<a href="#air-freshner1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            	<a href="#air-freshner3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="air-freshner3">
-			<div data-role="header" data-position="fixed" >
-				<h1>Tara Green Air Freshner - Sandal wood(250ml)</h1>
-				<a href="#home-fragrance" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/air_freshners/Tara Air Freshner Green Sandalwood-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.145.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Get the all new Tara green air freshner Sandal wood online to make your  living ambience divinely fragrantNatural sandalwood fragrance not only freshens the surrounding but also soothes and relaxes the mind.
-					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0009 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#air-freshner2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#air-freshner4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="air-freshner4">
-			<div data-role="header" data-position="fixed" >
-				<h1>Tara Green Air Freshner - Jasmine(250ml)</h1>
-				<a href="#home-fragrance" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/air_freshners/Tara Air Freshner Green Jasmine-400x400.png">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.145.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p>Buy Tara green air freshner Jasmine online for those wonderful moments, be it a celebration or festivity, this floral scent can be piercingly sweet and carry the scent miles off to be cherished and recollected
-					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0010 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#air-freshner3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-			</div>
-        </div>
-        <!-- END OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
 		<!-- START OF PERFUME'S LIST PAGE -->
         <div data-role="page" id="perfume">
 			<div data-role="header" data-position="fixed" >
@@ -464,9 +95,9 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
        		 <ul data-role="listview" data-inset="true" class="ui-alt-icon">
+       		 	<li><a href="#jass" data-transition="slide">JASS</a></li>
+       		 	<li><a href="#ahsan" data-transition="slide">AHSAN</a></li>
 				<li><a href="#crazy-moments" data-transition="slide">CRAZY MOMENTS</a></li>
-				<li><a href="#ahsan" data-transition="slide">AHSAN</a></li>
-				<li><a href="#jass" data-transition="slide">JASS</a></li>
 			</ul>
 		</div>
 		<!-- START OF CRAZY MOMEMNT'S PRODUCT LIST PAGE -->
@@ -501,6 +132,66 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#perfume" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
+				<li><a href="#ahsan3" data-transition="slide">
+					<img src="img/perfume/Ahsan-Attarful-500x500-400x400.png">
+					<h2>Ahsan Attarful(30ml)</h2>
+					<p>Rs.125.00</p></a>
+				</li>
+				<li><a href="#ahsan6" data-transition="slide">
+					<img src="img/perfume/Attar 100ml-300x300.png">
+					<h2>Ahsan Attarful (100ml)</h2>
+					<p>Rs.250.00</p></a>
+				</li>
+				<li><a href="#ahsan9" data-transition="slide">
+					<img src="img/perfume/Ahsan-Sandalwood-500x500-500x500.min-300x300.png">
+					<h2>Ahsan Sandalwood (30ml)</h2>
+					<p>Rs.140.00</p></a>
+				</li>
+				<li><a href="#ahsan13" data-transition="slide">
+					<img src="img/perfume/Ahsan Rose-500x500-500x500.min-300x300.png">
+					<h2>Ahsan Rose (30ml)</h2>
+					<p>Rs.140.00</p></a>
+				</li>
+				<li><a href="#ahsan12" data-transition="slide">
+					<img src="img/perfume/Ahsan-white-Flower-500x500-500x500.min-300x300.png">
+					<h2>Ahsan White Flower (30ml)</h2>
+					<p>Rs.140.00</p></a>
+				</li>
+				<li><a href="#ahsan11" data-transition="slide">
+					<img src="img/perfume/Ahsan-Frangipani-500x500-500x500.min-300x300.png">
+					<h2>Ahsan Frangipani (30ml)</h2>
+					<p>Rs.140.00</p></a>
+				</li>
+				<li><a href="#ahsan4" data-transition="slide">
+					<img src="img/perfume/Gold - 30ml-400x400.png">
+					<h2>Ahsan Golden Magnet(30ml)</h2>
+					<p>Rs.125.00</p></a>
+				</li>
+				<li><a href="#ahsan14" data-transition="slide">
+					<img src="img/perfume/Gold - 100ml-300x300 (1).png">
+					<h2>Ahsan Golden Magnet (100ml)</h2>
+					<p>Rs.250.00</p></a>
+				</li>
+				<li><a href="#ahsan16" data-transition="slide">
+					<img src="img/perfume/Black-Magnet-300x300.png">
+					<h2>Ahsan Black Magnet (30ml)</h2>
+					<p>Rs.140.00</p></a>
+				</li>
+				<li><a href="#ahsan15" data-transition="slide">
+					<img src="img/perfume/Black-Magnet-300x300.png">
+					<h2>Ahsan Black Magnet (100ml)</h2>
+					<p>Rs.300.00</p></a>
+				</li>
+				<li><a href="#ahsan10" data-transition="slide">
+					<img src="img/perfume/Perfume - Touch of chord-300x300.png">
+					<h2>Ahsan Touch a Chord	(50ml)</h2>
+					<p>Rs.200.00</p></a>
+				</li>
+				<li><a href="#ahsan20" data-transition="slide">
+					<img src="img/perfume/Ahsan-Marwah-500x500.min-300x300.png">
+					<h2>Ahsan Marwah (100ml)</h2>
+					<p>Rs.450.00</p></a>
+				</li>
 				<li><a href="#ahsan1" data-transition="slide">
 					<img src="img/perfume/Perfume - Sprit-400x400.png">
 					<h2>Ahsan Sprit(60ml)</h2>
@@ -510,27 +201,13 @@ FORGET BODY ODOUR EVER EXISTED</p>
 					<img src="img/perfume/Perfume - Freedom-400x400.png">
 					<h2>Ahsan Freedom(60ml)</h2>
 					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#ahsan3" data-transition="slide">
-					<img src="img/perfume/Ahsan-Attarful-500x500-400x400.png">
-					<h2>Ahsan Attarful(30ml)</h2>
-					<p>Rs.125.00</p></a>
-				</li>
-				<li><a href="#ahsan4" data-transition="slide">
-					<img src="img/perfume/Gold - 30ml-400x400.png">
-					<h2>Ahsan Golden Magnet(30ml)</h2>
-					<p>Rs.125.00</p></a>
-				</li>
+				</li>				
 				<li><a href="#ahsan5" data-transition="slide">
 					<img src="img/perfume/Perfume - Ajooba-300x300.png">
 					<h2>Ahsan Ajooba (60ml)</h2>
 					<p>Rs.200.00</p></a>
 				</li>
-				<li><a href="#ahsan6" data-transition="slide">
-					<img src="img/perfume/Attar 100ml-300x300.png">
-					<h2>Ahsan Attarful (100ml)</h2>
-					<p>Rs.250.00</p></a>
-				</li>
+				
 				<li><a href="#ahsan7" data-transition="slide">
 					<img src="img/perfume/Perfume - Attraction-300x300.png">
 					<h2>Ahsan Attraction (60ml)</h2>
@@ -540,47 +217,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 					<img src="img/perfume/Perfume - Pearl for women-300x300.png">
 					<h2>Ahsan pearl for women (50ml)</h2>
 					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#ahsan9" data-transition="slide">
-					<img src="img/perfume/Ahsan-Sandalwood-500x500-500x500.min-300x300.png">
-					<h2>Ahsan Sandalwood (30ml)</h2>
-					<p>Rs.140.00</p></a>
-				</li>
-				<li><a href="#ahsan10" data-transition="slide">
-					<img src="img/perfume/Perfume - Touch of chord-300x300.png">
-					<h2>Ahsan Touch a Chord	(50ml)</h2>
-					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#ahsan11" data-transition="slide">
-					<img src="img/perfume/Ahsan-Frangipani-500x500-500x500.min-300x300.png">
-					<h2>Ahsan Frangipani (30ml)</h2>
-					<p>Rs.140.00</p></a>
-				</li>
-				<li><a href="#ahsan12" data-transition="slide">
-					<img src="img/perfume/Ahsan-white-Flower-500x500-500x500.min-300x300.png">
-					<h2>Ahsan White Flower (30ml)</h2>
-					<p>Rs.140.00</p></a>
-				</li>
-				<li><a href="#ahsan13" data-transition="slide">
-					<img src="img/perfume/Ahsan Rose-500x500-500x500.min-300x300.png">
-					<h2>Ahsan Rose (30ml)</h2>
-					<p>Rs.140.00</p></a>
-				</li>
-				<li><a href="#ahsan14" data-transition="slide">
-					<img src="img/perfume/Gold - 100ml-300x300 (1).png">
-					<h2>Ahsan Golden Magnet (100ml)</h2>
-					<p>Rs.250.00</p></a>
-				</li>
-				<li><a href="#ahsan15" data-transition="slide">
-					<img src="img/perfume/Black-Magnet-300x300.png">
-					<h2>Ahsan Black Magnet (100ml)</h2>
-					<p>Rs.300.00</p></a>
-				</li>
-				<li><a href="#ahsan16" data-transition="slide">
-					<img src="img/perfume/Black-Magnet-300x300.png">
-					<h2>Ahsan Black Magnet (30ml)</h2>
-					<p>Rs.140.00</p></a>
-				</li>
+				</li>				
 				<li><a href="#ahsan17" data-transition="slide">
 					<img src="img/perfume/Ahsan-The-Best-Black-500x500-500x500.min-300x300.png">
 					<h2>Ahsan The Best Black (100ml)</h2>
@@ -596,11 +233,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 					<h2>Ahsan New Man (60ml)</h2>
 					<p>Rs.200.00</p></a>
 				</li>
-				<li><a href="#ahsan20" data-transition="slide">
-					<img src="img/perfume/Ahsan-Marwah-500x500.min-300x300.png">
-					<h2>Ahsan Marwah (100ml)</h2>
-					<p>Rs.450.00</p></a>
-				</li>
+				
 				<li><a href="#ahsan21" data-transition="slide">
 					<img src="img/perfume/rose.png">
 					<h2>Rose Musk - Eau De Parfum (100 ml e)</h2>
@@ -653,6 +286,16 @@ FORGET BODY ODOUR EVER EXISTED</p>
 					<img src="img/perfume/jass forever.png">
 					<h2>JASS Forever Eau De Parfum(100 ml)</h2>
 					<p>Rs.350.00</p></a>
+				</li>
+				<li><a href="#jass7" data-transition="slide">
+					<img src="img/perfume/jass gold.jpg">
+					<h2>JASS Gold(100 ml)</h2>
+					<p>Rs.750.00</p></a>
+				</li>
+				<li><a href="#jass8" data-transition="slide">
+					<img src="img/perfume/jass silver.jpg">
+					<h2>JASS Silver(100 ml)</h2>
+					<p>Rs.750.00</p></a>
 				</li>
 			</ul>
 		</div>
@@ -856,7 +499,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<h1>Ahsan Ajooba (60ml)</h1>
 				<a href="#ahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
-			<div data-role="content" id="content" class="product_image">
+			<div data-role=	"content" id="content" class="product_image">
                 <img src="img/perfume/Perfume - Ajooba-300x300.png">
             </div>
             <div class="ui-corner-all custom-corners">
@@ -877,7 +520,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            <a href="#ahsan4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#ahsan6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
-        </div>
+        </div>		
         <div data-role="page" id="ahsan6">
 			<div data-role="header" data-position="fixed" >
 				<h1>Ahsan Attarful (100ml)</h1>
@@ -894,7 +537,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            	<h3>Description</h3>
 	            </div>
 	            <div class="ui-body ui-body-a">
-	            	<p>Ahsan is a range of perfume introduced by SFP
+	            	<p>
 					A beautiful, fresh and clean fragnance with a calming yet uplifting note. Just the name jasmine is evocative of warm, humid nights, the scent hanging heavy in air, intoxicating all that walk by..... Reminiscent of lush gardens bathed in warm summer sunlight this fragrance will transport the wearer, wherever that might be, to a calm, cool heaven and offer clarity to the weariest mind.</p>
 	            </div>
 	            <div class="ui-bar ui-bar-a">
@@ -907,7 +550,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 			</div>
         </div>
         <div data-role="page" id="ahsan7">
-			<div data-role="header" data-position="fixed" >
+			<div data-role=	"header" data-position="fixed" >
 				<h1>Ahsan Attraction (60ml)</h1>
 				<a href="#ahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
@@ -977,7 +620,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            </div>
 	            <div class="ui-body ui-body-a">
 	            	<p>Ahsan is a range of perfume introduced by SFP
-					Inspired by the warmth and depth of sandalwood this fragrance has been created to be worn as a second skin. As sandalwood has traditionally been used in Buddhist religious ceremonics, is one of the oldest ingredients used in incence and has been in use for over 4000 years, our fragrance reflects the majesty of this exquisitely fragranced wood.</p>
+					Inspired by the warmth and depth of sandalwood this fragrance has been created to be worn as a second skin. As sandalwood has traditionally been used in Buddhist religious ceremonics, is one of the oldest ingredients used in incence and has been in use for over 4000 years. Our fragrance reflects the majesty of this exquisitely fragranced wood.</p>
 	            </div>
 	            <div class="ui-bar ui-bar-a">
 	            	<h3>Product code :PC0022 </h3>
@@ -1032,7 +675,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            	<h3>Description</h3>
 	            </div>
 	            <div class="ui-body ui-body-a">
-	            	<p>Ahsan is a range of perfume introduced by SFP. It provides a fresh and strong scent that will linger for a long time on the wearer and invigorate the wearer’s senses. It is perfect for a young lady who is still new to the world of perfumes.</p>
+	            	<p>Ahsan is a range of perfume introduced by SFP. It provides a fresh and strong scent that will linger for a long time on the wearer and invigorate the wearer’s senses.</p>
 	            </div>
 	            <div class="ui-bar ui-bar-a">
 	            	<h3>Product code :PC0024 </h3>
@@ -1468,7 +1111,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            	<h3>Description</h3>
 	            </div>
 	            <div class="ui-body ui-body-a">
-	            	<p>This composition is created by five main fragant line. The oriental deep fragrance note with mesmerising aroma of jasmine provides an unique and enthusiatic fusion in the warm sharpness of clove  when combined with the sparky floral Orange blossom dying down to the richness of peach to linger for ever.None of these main lines can be sensed separately, together they create a harmonius whole.</p>
+	            	<p>This composition is created by five main fragrant line. The oriental deep fragrance note with mesmerising aroma of jasmine provides an unique and enthusiatic fusion in the warm sharpness of clove  when combined with the sparky floral Orange blossom dying down to the richness of peach to linger forever.These main lines can be sensed separately but together they create a harmonius whole.</p>
 	            </div>
 	            <div class="ui-bar ui-bar-a">
 	            	<h3>Product code :PC0041 </h3>
@@ -1495,7 +1138,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            	<h3>Description</h3>
 	            </div>
 	            <div class="ui-body ui-body-a">
-	            	<p>Sweet powdery, woody floral scent of Violet flowers with fun loving fragrance of Jasmine and surprisingly carnal tuberose served on the lush green garden with a splash of cool sophisticated accord of Rose, Lilac and lilly of the valley gives a gentle twist to the wonderful animalistic Musk with the complexity of patchouli when combined with the  classic oriental woody note which is satifying and lingering all day long add a subtle touch of sensuality and warmth.</p>
+	            	<p>Sweet powdery, woody floral scent of Violet flowers with fun loving fragrance of Jasmine and surprisingly carnal tuberose served on the lush green garden with a splash of cool sophisticated accord of Rose, Lilac and lily of the valley gives a gentle twist to the wonderful animalistic Musk with the complexity of patchouli when combined with the  classic oriental woody note which is satifying and lingering all day long add a subtle touch of sensuality and warmth.</p>
 	            </div>
 	            <div class="ui-bar ui-bar-a">
 	            	<h3>Product code :PC0042 </h3>
@@ -1533,8 +1176,314 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            <!--<a href="#jass7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> -->
 			</div>
         </div>
+        <div data-role="page" id="jass7">
+			<div data-role="header" data-position="fixed" >
+				<h1>Jass Gold(100 ml)</h1>
+				<a href="#jass" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/jass gold.jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.750.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0077 </h3>
+	            </div>
+            </div>
+             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#jass6" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#jass8" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> 
+			</div>
+        </div>
+        <div data-role="page" id="jass8">
+			<div data-role="header" data-position="fixed" >
+				<h1>Jass Silver(100 ml)</h1>
+				<a href="#jass" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/perfume/jass silver.jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.750.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0077 </h3>
+	            </div>
+            </div>
+             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#jass" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <!--<a href="#jass8" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a> --> 
+			</div>
+        </div>
+
 	<!--- END OF JASS -->
         <!-- END OF PRODUCT DETAIL PAGES OF PERFUME CATEGORY -->
+		<!-- START OF DEODORANT'S LIST PAGE -->
+		<div data-role="page" id="deodorant">
+			<div data-role="header" data-position="fixed">
+				<h1>DEODORANT</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<ul data-role="listview" data-inset="true" data-divider-theme="a">
+				<li role="list-divider">REVO</li>
+				<li><a href="#deo1" data-transition="slide">
+					<img src="img/deodorant/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
+					<h2>Revo Deodorant spray Blue (100ml)</h2>
+					<p>Rs.160.00</p></a>
+				</li>
+				<li><a href="#deo2" data-transition="slide">
+					<img src="img/deodorant/Revo-Deodorant-spray-Violet-500x500.min-400x400.png">
+					<h2>Revo Deodorant spray Violent(100ml)</h2>
+					<p>Rs.160.00</p></a>
+				</li>
+				<li><a href="#deo7" data-transition="slide">
+					<img src="img/deodorant/REVO DEODORANT POWDER SPRAY ANTI BACTERIAL (75 g).png">
+					<h2>REVO Deodorant Powder Spray ANTI - BACTERIAL (75 g)</h2>
+					<p>Rs.300.00</p></a>
+				</li>
+				<li role="list-divider">TARA</li>
+				<li><a href="#deo3" data-transition="slide">
+					<img src="img/deodorant/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
+					<h2>Tara Vetiver Delight Body Deo (100ml)</h2>
+					<p>Rs.145.00</p></a>
+				</li>
+				<li><a href="#deo4" data-transition="slide">
+					<img src="img/deodorant/Tara-Blue-500x500-400x400.png">
+					<h2>Tara Blue Body Deo (100ml)</h2>
+					<p>Rs.145.00</p></a>
+				</li>
+				<li><a href="#deo5" data-transition="slide">
+					<img src="img/deodorant/Tara-Mile-Stone-500x500-500x500.min-400x400.png">
+					<h2>Tara Milestone Body Deo (100ml)</h2>
+					<p>Rs.145.00</p></a>
+				</li>
+				<li><a href="#deo6" data-transition="slide">
+					<img src="img/deodorant/Tara-Insta-Cool-Body-Deo-500x500-500x500.min-400x400.png">
+					<h2>Tara Insta Cool Body Deo (100ml)</h2>
+					<p>Rs.145.00</p></a>
+				</li>
+			</ul>-
+		</div><!-- END OF DEODORANT'S LIST PAGE -->
+		<!-- START OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
+		<div data-role="page" id="deo1">
+			<div data-role="header" data-position="fixed" >
+			<a href="#deodorant" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+				<h1>Revo Deodorant spray Blue (100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Revo-Deodorant-spray-Blue-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.160.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>-
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy REVO Deodorant Spray Blue online which is a highly effective anti-bacterial deodorant spray. This is a water based spray and contains no aerosol, guaranteeing ample application with every spray. REVO Deodorant Spray Blue contains Farnesol which is found in Palmarosa and Chamomille oils. Farnesol is an anti-bacterial agent that destroys odour-causing microbes.
+	            	</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : PC0001 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+            	<a href="#deo2"  data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+
+        <div data-role="page" id="deo2">
+			<div data-role="header" data-position="fixed">
+			<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+				<h1>Revo Deodorant spray Violet (100ml)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Revo-Deodorant-spray-Violet-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.160.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Your search ends here for a powerful strong antibacterial deodorant.   REVO Deodorant Spray Violet  is a water based spray and contains no aerosol, guaranteeing ample application with every spray. This deodorant Spray contains Farnesol which is found in Palmarosa and Chamomille oils. Farnesol is an anti-bacterial agent that destroys odour-causing microbes</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : PC0002</h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+            	<a href="#deo1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+            	<a href="#deo7" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="deo7">
+			<div data-role="header" data-position="fixed">
+			<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+				<h1>REVO Deodorant Powder Spray ANTI - BACTERIAL (75 g)</h1>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/REVO DEODORANT POWDER SPRAY ANTI BACTERIAL (75 g).png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.300.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Advance Technology pump-sprayer that holds a unique formula with an active anti-bacterial agent that complements a sound regimen of hygiene and skin care.  REVO contains Farnesol, found in Palmarosa and Chamomile oils helps to destroy odour-causing microbes in sweat.
+Be empowered
+·         Never let body odour hold you back
+
+·         Keep yourself stench free at all times
+
+·         Enlighten others who suffer the burden of body odour
+
+·         Resist the stench and prevail against it with REVO dry bath powder
+
+FORGET BODY ODOUR EVER EXISTED</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code : PC0002</h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+            	<a href="#deo2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+            	<a href="#deo3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="deo3">
+			<div data-role="header" data-position="fixed" >
+				<h1>Tara Vetiver Delight Body Deo (100ml)</h1>
+				<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Tara-Vetiver-Delight-Body-Deo-500x500-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Tara Vetiver Delight Body Deo spray is an aromatic fragrance for men that bring a touch of excitement to everything you do. Lavender, Rosemary and spices mixed with Patchouli to create a distinctive scent.  Buy Tara Vetiver Delight Body Deo online for a casual occasions.  Apply it to your pulse points before you leave the house, and enjoy the attention this masculine fragrance brings throughout the day.
+					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0003 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            	<a href="#deo2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="deo4">
+			<div data-role="header" data-position="fixed" >
+				<h1>Tara Blue Body Deo (100ml)</h1>
+				<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Tara-Blue-500x500-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Tara Blue Body deo with the invigorating scent of lemon and mandarin intermingled with geranium, rose and lily resting on a base of sandal, patchouli and soft musk with tempting vanilla  accord is designed to keep your freshness intact all through the day.  Buy Tara Blue body deodorant online to feel fresh all day long.
+					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0004 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            	<a href="#deo3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            	<a href="#deo5" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="deo5">
+			<div data-role="header" data-position="fixed" >
+				<h1>Tara Milestone Body Deo (100ml)</h1>
+				<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Tara-Mile-Stone-500x500-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Tara Milestone Body Deo  is an electrifying scent combining light floral tones with musky hints, designed to get you the attention you deserve.  Buy this Deodorant online for a smooth and mellow fragrance and step out with confidence.
+					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor by making you feel fresh all day long.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0005</h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            	<a href="#deo6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="deo6">
+			<div data-role="header" data-position="fixed">
+				<h1>Tara Insta Cool Body Deo (100ml)</h1>
+				<a href="#deodorant" data-transition="slide" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/deodorant/Tara-Insta-Cool-Body-Deo-500x500-500x500.min-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Tara Insta Cool Body Deo online for an instant cooling effect thanks to a blend of enriching aquatic notes that keep you cool and vibrant all through the day. The fragrance of fresh woody tones is enticingly different.
+					Tara Deodorants are inspired by nature allows the body to sweat normally but kills the bacteria that thrive on sweat, causing odor.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0006</h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            	<a href="#deo4" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+			</div>
+        </div>
+        <!--END OF PRODUCT DETAIL PAGES OF DEODORANT CATEGORY -->
         <!-- START OF ATTAR'S LIST PAGE -->
         <div data-role="page" id="attar">
 			<div data-role="header" data-position="fixed" >
@@ -1547,9 +1496,10 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<li><a href="#taibah" data-transition="slide">TAIBAH</a></li>
 				<li><a href="#salaam" data-transition="slide">MUKHALAT AL-SALAAM</a></li>
 				<li><a href="#pooja" data-transition="slide">ATTAR POOJA</a></li>
+				<li><a href="#attarjass" data-transition="slide">ATTAR JASS</a></li>
 			</ul>
 		</div>
-		<!-- END OF ATTAR'S LIST PAGE -->
+		<!-- END OF ATTAR'S LIST PAGE-->
 		<!-- START OF ATTAR AHSAN'S LIST PAGE -->
         <div data-role="page" id="attarahsan">
 			<div data-role="header" data-position="fixed" >
@@ -1557,53 +1507,18 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#attar" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
        		 <ul data-role="listview" data-inset="true" data-divider-theme="a">
-				<li><a href="#attarahsan1" data-transition="slide">
-					<img src="img/attar/Attar - Jazba-400x400.png">
-					<h2>Attar Jazba(20ml)</h2>
-					<p>Rs.500.00</p></a>
-				</li>
-				<li><a href="#attarahsan2" data-transition="slide">
-					<img src="img/attar/Attar - musk-400x400.png">
-					<h2>Attar Musk(20ml)</h2>
-					<p>Rs.500.00</p></a>
-				</li>
-				<li><a href="#attarahsan3" data-transition="slide">
-					<img src="img/attar/Attar - Savera-400x400.png">
-					<h2>Attar Savera(20ml)</h2>
-					<p>Rs.500.00</p></a>
-				</li>
-				<li><a href="#attarahsan4" data-transition="slide">
-					<img src="img/attar/Attar - Sitara-400x400.png">
-					<h2>Attar Sitara(20ml)</h2>
-					<p>Rs.500.00</p></a>
-				</li>
-				<li><a href="#attarahsan5" data-transition="slide">
-					<img src="img/attar/Attar - Sunheri-400x400.png">
-					<h2>Attar Sunheri(20ml)</h2>
-					<p>Rs.500.00</p></a>
-				</li>
-				<li><a href="#attarahsan6" data-transition="slide">
+       		 	<li><a href="#attarahsan6" data-transition="slide">
 					<img src="img/attar/Ahsan Attar Full (6  ml e).jpg">
 					<h2>Ahsan Attar Full (6 ml e)</h2>
 					<p>Rs.70.00</p></a>
 				</li>
-				<li><a href="#attarahsan7" data-transition="slide">
-					<img src="img/attar/Ahsan Attar Sandal (8 ml e).jpg">
-					<h2>Ahsan Attar Sandal (8 ml e)</h2>
-					<p>Rs.70.00</p></a>
-				</li>
 				<li><a href="#attarahsan8" data-transition="slide">
-					<img src="img/attar/Ahsan Attar Rose (8 ml e).jpg">
+					<img src="img/attar/2. AHSAN ATTAR ROSE 6ML.jpg">
 					<h2>Ahsan Attar Rose (8 ml e)</h2>
 					<p>Rs.70.00</p></a>
 				</li>
-				<li><a href="#attarahsan9" data-transition="slide">
-					<img src="img/attar/Ahsan Perpetuity for Men (8 ml e).jpg">
-					<h2>Ahsan Perpetuity for Men (8 ml e)</h2>
-					<p>Rs.70.00</p></a>
-				</li>
 				<li><a href="#attarahsan10" data-transition="slide">
-					<img src="img/attar/Ahsan Martin (8 ml e).jpg">
+					<img src="img/attar/3. AHSAN ATTAR MARTIN 8ML.jpg">
 					<h2>Ahsan Martin (8 ml e)</h2>
 					<p>Rs.70.00</p></a>
 				</li>
@@ -1613,7 +1528,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 					<p>Rs.70.00</p></a>
 				</li>
 				<li><a href="#attarahsan12" data-transition="slide">
-					<img src="img/attar/Ahsan Thousand Flowers  (8 ml e).jpg">
+					<img src="img/attar/5. AHSAN ATTAR 1000 FLOWERS 8ML.jpg">
 					<h2>Ahsan Thousand Flowers (8 ml e)</h2>
 					<p>Rs.70.00</p></a>
 				</li>
@@ -1635,6 +1550,48 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<li><a href="#attarahsan16" data-transition="slide">
 					<img src="img/attar/Janat Ul Firdaus (8 ml e).jpg">
 					<h2>Janat Ul Firdaus (8 ml e)</h2>
+					<p>Rs.70.00</p></a>
+				</li>
+				<li><a href="#attarahsan24" data-transition="slide">
+					<img src="img/attar/Ahsan Army  (8 ml e).jpg">
+					<h2>Ahsan Army (8 ml e)</h2>
+					<p>Rs.70.00</p></a>
+				</li>
+				<li><a href="#attarahsan1" data-transition="slide">
+					<img src="img/attar/Attar - Jazba-400x400.png">
+					<h2>Ahsan Attar Jazba(20ml)</h2>
+					<p>Rs.500.00</p></a>
+				</li>
+				<li><a href="#attarahsan2" data-transition="slide">
+					<img src="img/attar/Attar - musk-400x400.png">
+					<h2>Ahsan Attar Musk(20ml)</h2>
+					<p>Rs.500.00</p></a>
+				</li>
+				<li><a href="#attarahsan3" data-transition="slide">
+					<img src="img/attar/Attar - Savera-400x400.png">
+					<h2>Ahsan Attar Savera(20ml)</h2>
+					<p>Rs.500.00</p></a>
+				</li>
+				<li><a href="#attarahsan4" data-transition="slide">
+					<img src="img/attar/Attar - Sitara-400x400.png">
+					<h2>Ahsan Attar Sitara(20ml)</h2>
+					<p>Rs.500.00</p></a>
+				</li>
+				<li><a href="#attarahsan5" data-transition="slide">
+					<img src="img/attar/Attar - Sunheri-400x400.png">
+					<h2>Ahsan Attar Sunheri(20ml)</h2>
+					<p>Rs.500.00</p></a>
+				</li>
+				
+				<li><a href="#attarahsan7" data-transition="slide">
+					<img src="img/attar/Ahsan Attar Sandal (8 ml e).jpg">
+					<h2>Ahsan Attar Sandal (8 ml e)</h2>
+					<p>Rs.70.00</p></a>
+				</li>
+				
+				<li><a href="#attarahsan9" data-transition="slide">
+					<img src="img/attar/Ahsan Perpetuity for Men (8 ml e).jpg">
+					<h2>Ahsan Perpetuity for Men (8 ml e)</h2>
 					<p>Rs.70.00</p></a>
 				</li>
 				<li><a href="#attarahsan17" data-transition="slide">
@@ -1672,11 +1629,6 @@ FORGET BODY ODOUR EVER EXISTED</p>
 					<h2>Ahsan Bride Beauty (8 ml e)</h2>
 					<p>Rs.70.00</p></a>
 				</li>
-				<li><a href="#attarahsan24" data-transition="slide">
-					<img src="img/attar/Ahsan Army  (8 ml e).jpg">
-					<h2>Ahsan Army (8 ml e)</h2>
-					<p>Rs.70.00</p></a>
-				</li>
 				<li><a href="#attarahsan25" data-transition="slide">
 					<img src="img/attar/Ahsan Connect (8 ml e).jpg">
 					<h2>Ahsan Connect (8 ml e)</h2>
@@ -1686,7 +1638,251 @@ FORGET BODY ODOUR EVER EXISTED</p>
 		</div>
 		<!-- END OF ATTAR AHSAN'S LIST PAGE -->
 		<!-- START OF PRODUCT DETAIL PAGES OF ATTAR AHSAN CATEGORY -->
-		<div data-role="page" id="attarahsan1">
+		
+        <div data-role="page" id="attarahsan8">
+			<div data-role="header" data-position="fixed" >
+				<h1>Ahsan Attar Rose (8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/2. AHSAN ATTAR ROSE 6ML.jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0051 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan9" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan10">
+			<div data-role="header" data-position="fixed" >
+				<h1>Ahsan Martin(8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/3. AHSAN ATTAR MARTIN 8ML.jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0053 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan11" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan11">
+			<div data-role="header" data-position="fixed" >
+				<h1>Ahsan White Flower(8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/Ahsan White Flower  (8 ml e).jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0054 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan12" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan12">
+			<div data-role="header" data-position="fixed" >
+				<h1>Ahsan Thousand Flowers(8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/5. AHSAN ATTAR 1000 FLOWERS 8ML.jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0055 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan11" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan13" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan13">
+			<div data-role="header" data-position="fixed" >
+				<h1>Ahsan Dream Girl(8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/Ahsan Dream Girl  (8 ml e).jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0056 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan12" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan14" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan14">
+			<div data-role="header" data-position="fixed" >
+				<h1>Ahsan Opal Original(8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/Ahsan Opal Original  (8 ml e).jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0057 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan13" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan15" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan15">
+			<div data-role="header" data-position="fixed" >
+				<h1>Ahsan Original musk(8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/Ahsan Original musk (8 ml e).jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0058 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan14" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan16" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan16">
+			<div data-role="header" data-position="fixed" >
+				<h1>Janat Ul Firdaus(8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/Janat Ul Firdaus (8 ml e).jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0059 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan15" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan17" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan24">
+			<div data-role="header" data-position="fixed" >
+				<h1>Ahsan Army(8 ml e)</h1>
+				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/Ahsan Army  (8 ml e).jpg">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.70.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0067 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#attarahsan23" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#attarahsan25" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="attarahsan1">
 			<div data-role="header" data-position="fixed" >
 				<h1>Attar Jazba(20ml)</h1>
 				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
@@ -1878,33 +2074,6 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            <a href="#attarahsan8" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
-        <div data-role="page" id="attarahsan8">
-			<div data-role="header" data-position="fixed" >
-				<h1>Ahsan Attar Rose (8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Ahsan Attar Rose (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0051 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan7" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan9" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
         <div data-role="page" id="attarahsan9">
 			<div data-role="header" data-position="fixed" >
 				<h1>Ahsan Perpetuity for Men (8 ml e)</h1>
@@ -1930,195 +2099,6 @@ FORGET BODY ODOUR EVER EXISTED</p>
             <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
 	            <a href="#attarahsan8" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
 	            <a href="#attarahsan10" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="attarahsan10">
-			<div data-role="header" data-position="fixed" >
-				<h1>Ahsan Martin(8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Ahsan Martin (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0053 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan9" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan11" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="attarahsan11">
-			<div data-role="header" data-position="fixed" >
-				<h1>Ahsan White Flower(8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Ahsan White Flower  (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0054 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan10" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan12" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="attarahsan12">
-			<div data-role="header" data-position="fixed" >
-				<h1>Ahsan Thousand Flowers(8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Ahsan Thousand Flowers  (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0055 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan11" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan13" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="attarahsan13">
-			<div data-role="header" data-position="fixed" >
-				<h1>Ahsan Dream Girl(8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Ahsan Dream Girl  (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0056 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan12" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan14" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="attarahsan14">
-			<div data-role="header" data-position="fixed" >
-				<h1>Ahsan Opal Original(8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Ahsan Opal Original  (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0057 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan13" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan15" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="attarahsan15">
-			<div data-role="header" data-position="fixed" >
-				<h1>Ahsan Original musk(8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Ahsan Original musk (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0058 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan14" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan16" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
-        <div data-role="page" id="attarahsan16">
-			<div data-role="header" data-position="fixed" >
-				<h1>Janat Ul Firdaus(8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Janat Ul Firdaus (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0059 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan15" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan17" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
         <div data-role="page" id="attarahsan17">
@@ -2310,33 +2290,6 @@ FORGET BODY ODOUR EVER EXISTED</p>
 	            <a href="#attarahsan24" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
 			</div>
         </div>
-        <div data-role="page" id="attarahsan24">
-			<div data-role="header" data-position="fixed" >
-				<h1>Ahsan Army(8 ml e)</h1>
-				<a href="#attarahsan" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
-			</div>
-			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Ahsan Army  (8 ml e).jpg">
-            </div>
-            <div class="ui-corner-all custom-corners">
-            	<div class="ui-bar ui-bar-a">
-	            	<h3>Price : Rs.70.00</h3>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Description</h3>
-	            </div>
-	            <div class="ui-body ui-body-a">
-	            	<p></p>
-	            </div>
-	            <div class="ui-bar ui-bar-a">
-	            	<h3>Product code :PC0067 </h3>
-	            </div>
-            </div>
-            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
-	            <a href="#attarahsan23" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
-	            <a href="#attarahsan25" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
-			</div>
-        </div>
         <div data-role="page" id="attarahsan25">
 			<div data-role="header" data-position="fixed" >
 				<h1>Ahsan Connect(8 ml e)</h1>
@@ -2372,49 +2325,49 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#attar" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
        		 <ul data-role="listview" data-inset="true" data-divider-theme="a">
+				<li><a href="#malaki2" data-transition="slide">
+					<img src="img/attar/1. MALAKI ZAHOOR AL REEF 20ML.jpg">
+					<h2>Malaki Zahoor Al-Reef (20 ml e)</h2>
+					<p>Rs.200.00</p></a>
+				</li>
+				<li><a href="#malaki3" data-transition="slide">
+					<img src="img/attar/2. MALAKI SULTAN 20ML.png">
+					<h2>Malaki Sultan (20 ml e)</h2>
+					<p>Rs.200.00</p></a>
+				</li>
+				<li><a href="#malaki4" data-transition="slide">
+					<img src="img/attar/3. MALAKI MUKHALAT 20ML.png">
+					<h2>Malaki Mukhalat (20 ml e)</h2>
+					<p>Rs.200.00</p></a>
+				</li>
+				<li><a href="#malaki6" data-transition="slide">
+					<img src="img/attar/4. MALAKI GOLDEN LIGHT 20ML.png">
+					<h2>Malaki Golden Light  (20 ml e)</h2>
+					<p>Rs.200.00</p></a>
+				</li>
+				<li><a href="#malaki7" data-transition="slide">
+					<img src="img/attar/5. MALAKI OUD 20ML.jpg">
+					<h2>Malaki Oud  (20 ml e)</h2>
+					<p>Rs.200.00</p></a>
+				</li>
+				<li><a href="#malaki8" data-transition="slide">
+					<img src="img/attar/6. MALAKI ASEEL 20ML.jpg">
+					<h2>Malaki Aseel (20 ml e)</h2>
+					<p>Rs.200.00</p></a>
+				</li>
+				<li><a href="#malaki9" data-transition="slide">
+					<img src="img/attar/7. MALAKI SHAIKAH 20ML.png">
+					<h2>Malaki Shaikah (20 ml e)</h2>
+					<p>Rs.200.00</p></a>
+				</li>
 				<li><a href="#malaki1" data-transition="slide">
 					<img src="img/attar/Malaki Al-Umrah (20 ml e).jpg">
 					<h2>Malaki Al-Umrah (20 ml e)</h2>
 					<p>Rs.200.00</p></a>
 				</li>
-				<li><a href="#malaki2" data-transition="slide">
-					<img src="img/attar/Malaki Zahoor Al-Reef (20 ml e).jpg">
-					<h2>Malaki Zahoor Al-Reef (20 ml e)</h2>
-					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#malaki3" data-transition="slide">
-					<img src="img/attar/Malaki Sultan (20 ml e).jpg">
-					<h2>Malaki Sultan (20 ml e)</h2>
-					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#malaki4" data-transition="slide">
-					<img src="img/attar/Malaki Mukhalat (20 ml e).jpg">
-					<h2>Malaki Mukhalat (20 ml e)</h2>
-					<p>Rs.200.00</p></a>
-				</li>
 				<li><a href="#malaki5" data-transition="slide">
 					<img src="img/attar/Malaki Balkis (20 ml e).jpg">
 					<h2>Malaki Balkis (20 ml e)</h2>
-					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#malaki6" data-transition="slide">
-					<img src="img/attar/Malaki Golden Light  (20 ml e).jpg">
-					<h2>Malaki Golden Light  (20 ml e)</h2>
-					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#malaki7" data-transition="slide">
-					<img src="img/attar/Malaki Oud  (20 ml e).jpg">
-					<h2>Malaki Oud  (20 ml e)</h2>
-					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#malaki8" data-transition="slide">
-					<img src="img/attar/Malaki Aseel  (20 ml e).jpg">
-					<h2>Malaki Aseel  (20 ml e)</h2>
-					<p>Rs.200.00</p></a>
-				</li>
-				<li><a href="#malaki9" data-transition="slide">
-					<img src="img/attar/Malaki Shaikah (20 ml e).jpg">
-					<h2>Malaki Shaikah (20 ml e)</h2>
 					<p>Rs.200.00</p></a>
 				</li>
 				<li><a href="#malaki10" data-transition="slide">
@@ -2463,7 +2416,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#malaki" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Malaki Zahoor Al-Reef (20 ml e).jpg">
+                <img src="img/attar/1. MALAKI ZAHOOR AL REEF 20ML.jpg">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2490,7 +2443,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#malaki" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Malaki Sultan (20 ml e).jpg">
+                <img src="img/attar/2. MALAKI SULTAN 20ML.png">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2517,7 +2470,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#malaki" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Malaki Mukhalat (20 ml e).jpg">
+                <img src="img/attar/3. MALAKI MUKHALAT 20ML.png">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2571,7 +2524,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#malaki" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Malaki Golden Light  (20 ml e).jpg">
+                <img src="img/attar/4. MALAKI GOLDEN LIGHT 20ML.png">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2598,7 +2551,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#malaki" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Malaki Oud  (20 ml e).jpg">
+                <img src="img/attar/5. MALAKI OUD 20ML.jpg">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2625,7 +2578,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#malaki" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Malaki Aseel  (20 ml e).jpg">
+                <img src="img/attar/6. MALAKI ASEEL 20ML.jpg">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2652,7 +2605,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#malaki" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Malaki Shaikah (20 ml e).jpg">
+                <img src="img/attar/7. MALAKI SHAIKAH 20ML.png">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2736,27 +2689,27 @@ FORGET BODY ODOUR EVER EXISTED</p>
 			</div>
        		 <ul data-role="listview" data-inset="true" data-divider-theme="a">
 				<li><a href="#taibah1" data-transition="slide">
-					<img src="img/attar/Taibah Oud (20 ml e).jpg">
+					<img src="img/attar/1. TAIBAH OUD 20ML.jpg">
 					<h2>Taibah Oud (20 ml e)</h2>
 					<p>Rs.175.00</p></a>
 				</li>
 				<li><a href="#taibah2" data-transition="slide">
-					<img src="img/attar/Taibah Mubakher ( 20 ml e).jpg">
+					<img src="img/attar/2. TAIBAH MUBAKHER 20ML.png">
 					<h2>Taibah Mubakher ( 20 ml e)</h2>
 					<p>Rs.175.00</p></a>
 				</li>
 				<li><a href="#taibah3" data-transition="slide">
-					<img src="img/attar/Taibah Blue Stone (20 ml e).jpg">
+					<img src="img/attar/3. TAIBAH BLUE STONE 20ML.jpg">
 					<h2>Taibah Blue Stone (20 ml e)</h2>
 					<p>Rs.175.00</p></a>
 				</li>
 				<li><a href="#taibah4" data-transition="slide">
-					<img src="img/attar/Taibah Mukhalat Aseel (20 ml e).jpg">
+					<img src="img/attar/4. TAIBAH ASEEL 20ML.jpg">
 					<h2>Taibah Mukhalat Aseel (20 ml e)</h2>
 					<p>Rs.175.00</p></a>
 				</li>
 				<li><a href="#taibah5" data-transition="slide">
-					<img src="img/attar/Taibah Mukhalat  (20 ml e).jpg">
+					<img src="img/attar/5. TAIBAH MUKHALAT 20ML.jpg">
 					<h2>Taibah Mukhalat (20 ml e)</h2>
 					<p>Rs.175.00</p></a>
 				</li>
@@ -2770,7 +2723,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#taibah" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Taibah Oud (20 ml e).jpg">
+                <img src="img/attar/1. TAIBAH OUD 20ML.jpg">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2797,7 +2750,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#taibah" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Taibah Mubakher ( 20 ml e).jpg">
+                <img src="img/attar/2. TAIBAH MUBAKHER 20ML.png">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2824,7 +2777,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#taibah" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Taibah Blue Stone (20 ml e).jpg">
+                <img src="img/attar/3. TAIBAH BLUE STONE 20ML.jpg">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2851,7 +2804,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#taibah" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Taibah Mukhalat Aseel (20 ml e).jpg">
+                <img src="img/attar/4. TAIBAH ASEEL 20ML.jpg">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -2878,7 +2831,7 @@ FORGET BODY ODOUR EVER EXISTED</p>
 				<a href="#taibah" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<div data-role="content" id="content" class="product_image">
-                <img src="img/attar/Taibah Mukhalat  (20 ml e).jpg">
+                <img src="img/attar/5. TAIBAH MUKHALAT 20ML.jpg">
             </div>
             <div class="ui-corner-all custom-corners">
             	<div class="ui-bar ui-bar-a">
@@ -3147,7 +3100,198 @@ The sync between love and flowers doesn’t end on a bouquet, but transcends bey
 			</div>
 		</div>
 		<!-- END OF ATTAR POOJA'S LIST PAGE -->
+		<!-- START OF ATTAR JASS'S LIST PAGE -->
+        <div data-role="page" id="attarjass">
+			<div data-role="header" data-position="fixed" >
+				<h1>ATTAR JASS</h1>
+				<a href="#attar" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+       		 <ul data-role="listview" data-inset="true" data-divider-theme="a">
+				<li><a href="#attarjass1" data-transition="slide">
+					<img src="img/attar/3ml jass, 6ml jass .png">
+					<h2>JASS 3ML and 6MK ROLLON</h2>
+					<p>Rs.30.00(3ml), Rs.50.00(6ml)</p></a>
+				</li>
+			</ul>
+		</div>
+		<!-- END OF ATTAR JASS'S LIST PAGE -->
+		<!-- START OF ATTAR JASS'S PRODUCT LIST PAGE -->
+		<div data-role="page" id="attarjass1">
+			<div data-role="header" data-position="fixed" >
+				<h1>ATTAR Jass (3 ml x 6 bottles)</h1>
+				<a href="#attarjass" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/attar/3ml jass, 6ml jass .png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.30.00(3ml), Rs.50.00(6ml)</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p></p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0089 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <!--<a href="#salaam5" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#salaam6" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>-->
+			</div>
+		</div>
+		<!-- END OF ATTAR JASS'S PRODUCT LIST PAGE -->
 		<!-- END OF ATTAR CATEGORY -->
+		<!-- START OF HOME FRAGRANCE'S LIST PAGE -->
+		<div data-role="page" id="home-fragrance">
+			<div data-role="header" data-position="fixed" >
+				<h1>HOME FRAGRANCE</h1>
+				<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<ul data-role="listview" data-inset="true" data-divider-theme="a">
+				<li role="list-divider">AIR FRESHNER</li>
+				<li><a href="#air-freshner1" data-transition="slide">
+					<img src="img/air_freshners/Tara Air Freshner Green Rose infusion-400x400.png">
+					<h2>Tara Green Air Freshner - Rose Infusion(250ml)</h2>
+					<p>Rs.145.00</p></a>
+				</li>
+				<li><a href="#air-freshner2" data-transition="slide">
+					<img src="img/air_freshners/Tara Air Freshner Green Lavender-400x400.png">
+					<h2>Tara Green Air Freshner - Lavender(250ml)</h2>
+					<p>Rs.145.00</p></a>
+				</li>
+				<li><a href="#air-freshner3" data-transition="slide">
+					<img src="img/air_freshners/Tara Air Freshner Green Sandalwood-400x400.png">
+					<h2>Tara Green Air Freshner - Sandal wood(250ml)</h2>
+					<p>Rs.145.00</p></a>
+				</li>
+				<li><a href="#air-freshner4" data-transition="slide">
+					<img src="img/air_freshners/Tara Air Freshner Green Jasmine-400x400.png">
+					<h2>Tara Green Air Freshner - Jasmine(250ml)</h2>
+					<p>Rs.145.00</p></a>
+				</li>
+			</ul>
+		</div>
+		<!-- END OF HOME FRAGRANCE'S LIST PAGE -->
+		<!-- START OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
+		<div data-role="page" id="air-freshner1">
+			<div data-role="header" data-position="fixed" >
+				<h1>Tara Green Air Freshner - Rose Infusion(250ml)</h1>				
+				<a href="#home-fragrance" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/air_freshners/Tara Air Freshner Green Rose infusion-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Presenting Tara green air freshener rose infusion online to experience the essence of rose extracts to make your ambience smell wonderfully fragrant.
+					Fragrance of rose is traditionally used to calm and uplift ones mood and can be attributed to its properties as an antidepressant.
+					Roses are widely considered as the most beautiful flowers in the world.  Its incomparable fragrance can invoke romantic feelings even in the hardest of hearts.
+					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0007</h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#air-freshner2" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="air-freshner2">
+			<div data-role="header" data-position="fixed" >
+				<h1>Tara Green Air Freshner - Lavender(250ml)</h1>
+				<a href="#home-fragrance" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/air_freshners/Tara Air Freshner Green Lavender-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Tara Green Air Freshner Lavender online and spray it on your bed spreads, sofas and screens to fill the atmosphere for yourself and for your guest with a distinctive aroma of refreshing fragrance.  Lavender is used to treat anxiety, headaches, depression and improves the state of mind and body by inducing calming effect.
+					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0008</h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            	<a href="#air-freshner1" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            	<a href="#air-freshner3" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="air-freshner3">
+			<div data-role="header" data-position="fixed" >
+				<h1>Tara Green Air Freshner - Sandal wood(250ml)</h1>
+				<a href="#home-fragrance" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/air_freshners/Tara Air Freshner Green Sandalwood-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Get the all new Tara green air freshner Sandal wood online to make your  living ambience divinely fragrantNatural sandalwood fragrance not only freshens the surrounding but also soothes and relaxes the mind.
+					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0009 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#air-freshner2" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+	            <a href="#air-freshner4" data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="notext" data-iconpos="right" class="ui-btn-right"></a>
+			</div>
+        </div>
+        <div data-role="page" id="air-freshner4">
+			<div data-role="header" data-position="fixed" >
+				<h1>Tara Green Air Freshner - Jasmine(250ml)</h1>
+				<a href="#home-fragrance" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
+			</div>
+			<div data-role="content" id="content" class="product_image">
+                <img src="img/air_freshners/Tara Air Freshner Green Jasmine-400x400.png">
+            </div>
+            <div class="ui-corner-all custom-corners">
+            	<div class="ui-bar ui-bar-a">
+	            	<h3>Price : Rs.145.00</h3>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Description</h3>
+	            </div>
+	            <div class="ui-body ui-body-a">
+	            	<p>Buy Tara green air freshner Jasmine online for those wonderful moments, be it a celebration or festivity, this floral scent can be piercingly sweet and carry the scent miles off to be cherished and recollected
+					The New Tara Green Air Freshner contains Farnasol which is found in Palmarosa and chamomile oils.  Farnasol is an antibacterial agent that destroys odour causing bacteria. Using it at home or office not only freshens up the atmosphere with lasting fragrance but makes it an effective hygienic option.</p>
+	            </div>
+	            <div class="ui-bar ui-bar-a">
+	            	<h3>Product code :PC0010 </h3>
+	            </div>
+            </div>
+            <div data-role="footer" data-position="fixed" style="height:40px" data-tap-toggle="false">
+	            <a href="#air-freshner3" data-role="button" data-transition="slide" data-icon="arrow-l" data-iconpos="notext" data-iconpos="left" class="ui-btn-left" data-direction="reverse"></a>
+			</div>
+        </div>
+        <!-- END OF PRODUCT DETAIL PAGES OF HOME FRAGRANCE CATEGORY -->
+		
+        
         <!-- START OF SILENT VALLEY'S LIST PAGE -->
         <div data-role="page" id="slient-valley">
 			<div data-role="header" data-position="fixed" >
@@ -3630,6 +3774,7 @@ The sync between love and flowers doesn’t end on a bouquet, but transcends bey
 				<a href="#slient-valley" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-carat-l">Back</a>
 			</div>
 			<ul data-role="listview" data-inset="true" data-divider-theme="a">
+				<li role="list-divider">Aromatherapy oils</li>
 				<li><a href="#aromatherapy1" data-transition="slide">
 					<img src="img/silent_valley/Anti aging 0207-300x300.png">
 					<h2>Anti Aging (10ml)</h2>
@@ -3679,6 +3824,7 @@ The sync between love and flowers doesn’t end on a bouquet, but transcends bey
 					<h2>Purspace (10ml)</h2>
 					<p>Rs.300.00</p></a>
 				</li>
+				<li role="list-divider">Ayurvedic massage oil</li>
 				<li><a href="#aromatherapy12" data-transition="slide">
 					<img src="img/silent_valley/Silent Valley massage oil for soothing 50 ml.png">
 					<h2>Massage Oil for Soothing(50 ml)</h2>
@@ -4102,6 +4248,8 @@ The sync between love and flowers doesn’t end on a bouquet, but transcends bey
             </div>
         </div>
         <!--END OF DOWNLOADS PAGE -->
+
+        <!--Start of the Gallery -->
         <div data-role="page" id="gallery" style="background-color:white">
         	<div data-role="header" data-position="fixed" >
 				<h1>GALLERY</h1>
@@ -4247,9 +4395,11 @@ The sync between love and flowers doesn’t end on a bouquet, but transcends bey
         	        </div>
 
         	</div>
-        </div></div>
-        <script src="js/photoswipe.js"></script>
-		<script src="js/photoswipe-ui-default.js"></script>
-		<script src="js/index.js"></script>
+        </div>
+        </div>
+        <!--End of the Gallery -->
+        <script src="js/photoswipe.js"></script> <!--gallery JS files -->
+		<script src="js/photoswipe-ui-default.js"></script> <!--gallery JS files -->
+		<script src="js/index.js"></script> 
 	</body>
 </html>
