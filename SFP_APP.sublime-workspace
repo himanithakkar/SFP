@@ -1,0 +1,569 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"word",
+				"wordpress"
+			],
+			[
+				"h",
+				"html	html"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"hre",
+				"href	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 222221,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/mywebsite/index.html",
+			"settings":
+			{
+				"buffer_size": 95190,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Work/My website/himani_logo_while.svg",
+			"settings":
+			{
+				"buffer_size": 3108,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "eg.html",
+			"settings":
+			{
+				"buffer_size": 1554,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "s",
+		"selected_items":
+		[
+			[
+				"s",
+				"Snippet: html"
+			],
+			[
+				"",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Work/GitHub/SFP",
+		"/D/Work/GitHub/SFP/css"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/Admin/admin_panel/font-awesome-4.1.0/scss/_rotated-flipped.scss",
+		"/C/xampp/htdocs/Admin/admin_panel/logout.php",
+		"/C/xampp/htdocs/Admin/admin_panel/bootstrap-elements.html",
+		"/C/xampp/htdocs/Admin/admin_panel/activate_user.php",
+		"/C/xampp/htdocs/Admin/admin_panel/update_password.php",
+		"/C/xampp/htdocs/Admin/admin_panel/header.php",
+		"/C/xampp/htdocs/Admin/admin_panel/manage_order.php",
+		"/C/xampp/htdocs/Admin/admin_panel/login.php",
+		"/C/xampp/htdocs/tryandbuy2/admin_pages/update_password.php",
+		"/C/xampp/htdocs/tryandbuy2/admin_pages/diactivate_user.php",
+		"/C/xampp/htdocs/tryandbuy2/admin_pages/filters.php",
+		"/C/xampp/htdocs/tryandbuy2/admin_pages/manage_user.php",
+		"/C/xampp/htdocs/tryandbuy2/admin_pages/admin_home.php",
+		"/C/xampp/htdocs/Admin/sb-admin/blank-page.html",
+		"/C/xampp/htdocs/urvish_sir_data/Shopping_Cart/Code/index.php",
+		"/C/xampp/htdocs/tryandbuy2/admin_pages/login.php",
+		"/C/xampp/htdocs/Admin/admin_panel/index.php",
+		"/C/xampp/htdocs/Admin/admin_panel/footer.php",
+		"/C/xampp/htdocs/Admin/AdminLTE-2.3.3/sidenav.php",
+		"/C/xampp/htdocs/Admin/admin_panel/sidenav.php",
+		"/C/xampp/htdocs/Admin/admin_panel/README.md",
+		"/C/xampp/htdocs/Admin/AdminLTE-2.3.3/footer.php",
+		"/C/xampp/htdocs/best/main/myindex.html",
+		"/D/Work/GitHub/SFP/index.html",
+		"/C/xampp/htdocs/wordpress/wp-config.php",
+		"/C/xampp/htdocs/wordpress/wp-content/uploads/wc-logs/.htaccess",
+		"/C/xampp/htdocs/best/main/js/all.js",
+		"/C/xampp/htdocs/wordpress/wp-content/envato-backups/.htaccess",
+		"/C/xampp/htdocs/wordpress/.htaccess",
+		"/C/xampp/htdocs/wordpress/wp-content/uploads/woocommerce_uploads/.htaccess",
+		"/C/Users/himani/AppData/Local/Temp/Temp1_php_adminpanel_105.zip/pages/statistics.php",
+		"/C/Users/himani/AppData/Local/Temp/Temp1_php_adminpanel_105.zip/modules/datagrid/examples/code_example1.php",
+		"/C/xampp/php/pear/File/HtAccess.php",
+		"/D/Himani/Data/BCA/calc.html",
+		"/D/Work/JS programming/program1.html",
+		"/D/Work/JS programming/prog_1.js",
+		"/D/Yash/html/p1.html",
+		"/D/Work/My website/chaitya/demos.seekerinfinity.com/demo/insta/preview/index.green.html",
+		"/C/Users/himani/Desktop/Interactive maps/processing-2.2.1/modes/java/examples/Books/Visualizing Data/ch04-milkteacoffee/figure_08_draw_data_line/data/milk-tea-coffee.tsv",
+		"/C/Users/himani/Downloads/spain-map-master/spain-map-master/index.html",
+		"/D/Work/GitHub/SFP/cssfile.css",
+		"/C/Users/himani/Downloads/theme-apex-master/theme-apex-master/gulpfile.js",
+		"/C/Users/himani/Desktop/Instagram-PHP-API-master/src/Instagram.php",
+		"/C/Users/himani/Downloads/theme-apex-master/theme-apex-master/theme.html",
+		"/C/Users/himani/Desktop/Instagram-PHP-API-master/src/InstagramException.php",
+		"/C/xampp/htdocs/tryandbuy2/header.php",
+		"/D/Work/Cordova App/SFP/config.xml",
+		"/D/Work/GitHub/SFP/css/style.css",
+		"/D/Work/GitHub/SFP/eg.html",
+		"/C/xampp/htdocs/mjff/sitefunctions.php",
+		"/D/Work/Cordova App/SFP/www/index.html",
+		"/C/xampp/htdocs/mjff/header.php",
+		"/D/Work/GitHub/SFP/css/app.css",
+		"/C/Users/himani/Downloads/makerfest1.html",
+		"/C/Users/himani/Desktop/email html/makerfesthtml.html",
+		"/C/Users/himani/Desktop/makerfesthtml.html",
+		"/D/Work/GitHub/SFP/css/jquery.mobile-1.4.5.min.css",
+		"/C/Users/himani/Downloads/multiple-photoswipe-galleries-on-pagea/css/style.css",
+		"/D/Work/GitHub/SFP/css/default-skin/default-skin.css",
+		"/C/Users/himani/Downloads/multiple-photoswipe-galleries-on-pagea/index.html",
+		"/D/Work/DEMO/js/demo.js",
+		"/D/Work/DEMO/css/demo.css",
+		"/D/Work/DEMO/DEMO.html",
+		"/D/Work/GitHub/SFP/js/map.js",
+		"/D/Work/GitHub/SFP/js/app.js",
+		"/D/Work/Cordova App/SFP/www/js/app.js",
+		"/D/Work/sfp/www/js/index.js",
+		"/D/Work/Cordova App/SFP/platforms/android/build.gradle",
+		"/D/Work/Cordova App/SFP/platforms/android/settings.gradle",
+		"/D/Work/Cordova App/SFP/platforms/android/src/com/sfp/perfumes/MainActivity.java",
+		"/D/Work/sfp/www/index.html",
+		"/D/Work/sfp/config.xml",
+		"/D/Work/GitHub/SFP/SFP_app/config.xml",
+		"/D/Work/GitHub/SFP/js/index.js",
+		"/C/xampp/htdocs/project/themes and pens/theme-master/lib/init.php",
+		"/D/Work/GitHub/SFP/css/index.css",
+		"/C/xampp/htdocs/WP/.htaccess",
+		"/C/xampp/htdocs/tryandbuy2/css/bootstrap.css",
+		"/C/xampp/htdocs/tryandbuy2/css/bootstrap.min.css",
+		"/C/xampp/htdocs/WP/wp-config.php",
+		"/C/Users/himani/Documents/GitHub/SFP/css/jquery.mobile-1.4.5.min.css",
+		"/C/Users/himani/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/himani/Documents/GitHub/SFP/js/map.js",
+		"/C/Users/himani/Documents/GitHub/SFP/css/index.css",
+		"/C/Users/himani/Documents/GitHub/AJS/index.html",
+		"/C/Users/himani/Documents/GitHub/AJS/product-gallery.html",
+		"/C/Users/himani/Documents/GitHub/AJS/js/app.js",
+		"/C/Users/himani/Documents/GitHub/SFP/index.html",
+		"/C/Users/himani/Documents/GitHub/AJS/product-reviews.html",
+		"/C/Users/himani/Documents/GitHub/AJS/product-description.html",
+		"/C/Users/himani/Documents/GitHub/AJS/js/product-description.html",
+		"/C/Users/himani/Documents/GitHub/AJS/product-specs.html",
+		"/C/Users/himani/Documents/GitHub/DemoApp/index.html",
+		"/C/Users/himani/Documents/GitHub/DemoApp/js/app.js",
+		"/C/Users/himani/Documents/GitHub/DemoApp/js/index.js",
+		"/C/Users/himani/Documents/GitHub/SFP/js/gallery.js",
+		"/C/Users/himani/Documents/GitHub/SFP/js/swiper.min.js",
+		"/C/Users/himani/Documents/GitHub/DemoApp/js/demo1.js",
+		"/C/Users/himani/Downloads/Swiper-3.1.0/Swiper-3.1.0/demos/02-responsive.html",
+		"/C/Users/himani/Documents/GitHub/SFP/js/photo-swipe-ui-default.min.js",
+		"/C/Users/himani/Documents/GitHub/TurbanTadka/index.html",
+		"/C/Users/himani/Documents/GitHub/SFP/deodorant.html",
+		"/C/Users/himani/Documents/GitHub/DemoApp/js/demo2.js",
+		"/C/Users/himani/Documents/GitHub/DemoApp/js/demo5.js",
+		"/C/Users/himani/Documents/GitHub/DemoApp/js/demo4.js",
+		"/C/Users/himani/Documents/GitHub/RJS/NVCinquiry@state.gov",
+		"/C/Users/himani/Downloads/Restaurant-master/Restaurant-master/css/main.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Malaki Mukhalat",
+			"pooja",
+			"Malaki Mukhalat",
+			"pooja",
+			"malaki",
+			"jass per",
+			"jass",
+			"jass 2ml",
+			"crazy m",
+			"Ahsan Attar Full",
+			"ahsan1",
+			"ahsan3",
+			"crazymoments1",
+			"crazymoments3",
+			"crazymoments2",
+			"rose",
+			"wood",
+			"JASS PER",
+			"sidenav",
+			"order",
+			"manage or",
+			"manage",
+			"silent",
+			"attar",
+			"aromath",
+			"Attar",
+			"aromathe",
+			"aromatha",
+			"jass bea",
+			"jass morning",
+			"revo",
+			"ahsan sa",
+			"ahsan6",
+			"ahsan attarful 100ml",
+			"ahsan attarful",
+			"aromath",
+			"e2fff3",
+			"04CE7B",
+			"02C173",
+			"border",
+			"04ce7b",
+			"d7ffef",
+			"c4ffe7",
+			"97ffd4",
+			"E2DDC4",
+			"background: #FFF ",
+			"background: #FFF none repeat scroll 0% 0%;\n ",
+			"background: #FFF none repeat scroll 0% 0%;\n    background-color: #FFF;\n    background-image: none;\n    background-repeat: repeat;\n    background-attachment: scroll;\n    background-position: 0% 0%;\n    background-clip: border-box;\n    background-origin: padding-box;\n    background-size: auto auto;",
+			"#home",
+			"10px",
+			"border-bottom",
+			"border-bottom: 10px solid #",
+			"no repeat",
+			"UI-HEADER ",
+			"#HOME",
+			"#home",
+			"#home .ui-header",
+			"333",
+			"3A2D1D",
+			"04ce7b",
+			"B68E0B",
+			".css",
+			"pika",
+			"images",
+			"jpg",
+			"button",
+			"gallery",
+			"button",
+			"        \n",
+			"button",
+			"button\n",
+			";\n",
+			"img",
+			"content",
+			"data-transition=\"slide\" class=\"ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r\"",
+			"data-role=\"button\" data-transition=\"slide\" data-icon=\"arrow-r\" data-iconpos=\"notext\" data-iconpos=\"right\" class=\"ui-btn-right\"",
+			"data-transition=\"slide\" data-direction=\"reverse\" class=\"ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l\"",
+			"<div data-role=\"footer\" data-position=\"fixed\">",
+			"<div data-role=\"header\" data-position=\"fixed\">",
+			"<div data-role=\"header\" data-position=\"fixed\" >",
+			"<div data-role=\"footer\" data-position=\"fixed\" >",
+			"class=\"ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r\"",
+			"class=\"ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-carat-l\"",
+			"header\" data-position=\"fixed\">",
+			"header\"",
+			"header\" ",
+			"header",
+			".ui-panel-wrapper {",
+			".ui-page-theme-a .ui-panel-wrapper {",
+			"frang",
+			"firan",
+			"next",
+			"previous",
+			"next",
+			"href=\"perfume",
+			"data-add-back-btn=\"true\" data-rel=\"back\"",
+			"footer",
+			"footer-button",
+			"fa-phone",
+			"perfume6",
+			"gallery",
+			"1",
+			"JASS Perfume Spray(8ml) - Pack of Two",
+			")</",
+			"img/Tara-Blue-500x500-400x400.png",
+			".ui-btn.ui-btn-a:visited {",
+			"visited {",
+			".ui-btn.ui-btn-a:visited {",
+			".ui-overlay-a,",
+			".ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper",
+			".ui-bar-a, ",
+			".ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"crazymoments3",
+			"crazymoments2",
+			"crazymoments1",
+			"data-role=\"button\" data-transition=\"slide\" data-icon=\"arrow-r\" data-iconpos=\"notext\" data-iconpos=\"right\" class=\"ui-btn-right\"",
+			"data-role=\"button\" data-transition=\"slide\" data-icon=\"arrow-l\" data-iconpos=\"notext\" data-iconpos=\"left\" class=\"ui-btn-left\"",
+			"<div data-role=\"footer\" data-position=\"fixed\" style=\"height:40px\" data-tap-toggle=\"false\">",
+			"data-role=\"button\" data-transition=\"slide\" data-icon=\"arrow-r\" data-iconpos=\"notext\" data-iconpos=\"right\" class=\"ui-btn-right\"",
+			"data-role=\"button\" data-transition=\"slide\" data-icon=\"arrow-l\" data-iconpos=\"notext\" data-iconpos=\"left\" class=\"ui-btn-left\"",
+			"header\" data-position=\"fixed\"",
+			"header\" data-position=\"fixed\">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91193,
+								91193
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 33570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/mywebsite/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 95190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4080,
+								4080
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1351.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Work/My website/himani_logo_while.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1571,
+								1571
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "eg.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								301,
+								301
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SFP_APP.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 289.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
